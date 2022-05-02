@@ -1,0 +1,111 @@
+import {
+	SiJavascript as Javascript,
+	SiNodedotjs as NodeJS,
+	SiPython as Python,
+	SiHtml5 as HTML,
+	SiCss3 as CSS,
+	SiSass as SASS,
+	SiCsharp as CSharp,
+	SiGithub as Github,
+	SiWebpack as WebPack,
+	SiBootstrap as Bootstrap,
+	SiTailwindcss as Tailwind,
+	SiApollographql as Apollo,
+	SiReact as React,
+	SiNextdotjs as Next,
+	SiGatsby as Gatsby,
+	SiJest as Jest,
+	SiStyledcomponents as StyledComponents,
+	SiTestinglibrary as Testinglibrary,
+	SiArduino as Arduino,
+	SiNpm as NPM,
+} from 'react-icons/si';
+import { BsQuestionCircle as Question } from 'react-icons/bs';
+
+const skills = [
+	{ name: 'HTML', percentage: '80%', icon: <HTML />, category: 'language' },
+	{ name: 'CSS', percentage: '80%', icon: <CSS />, category: 'language' },
+	{
+		name: 'Javascript',
+		percentage: '75%',
+		icon: <Javascript />,
+		category: 'language',
+	},
+	{
+		name: 'Python',
+		percentage: '15%',
+		icon: <Python />,
+		category: 'language',
+	},
+	{ name: 'C#', percentage: '5%', icon: <CSharp />, category: 'language' },
+	{
+		name: 'Arduino',
+		percentage: '30%',
+		icon: <Arduino />,
+		category: 'language',
+	},
+	{
+		name: 'Git/GitHub',
+		percentage: '40%',
+		icon: <Github />,
+		category: 'tools',
+	},
+	{
+		name: 'NPM',
+		percentage: '80%',
+		icon: <NPM />,
+		category: 'tools',
+	},
+	{
+		name: 'WebPack',
+		percentage: '40%',
+		icon: <WebPack />,
+		category: 'library',
+	},
+	{
+		name: 'Styled-components',
+		percentage: '75%',
+		icon: <StyledComponents />,
+		category: 'framework',
+	},
+	{
+		name: 'Bootstrap',
+		percentage: '60%',
+		icon: <Bootstrap />,
+		category: 'framework',
+	},
+	{
+		name: 'Tailwind CSS',
+		percentage: '70%',
+		icon: <Tailwind />,
+		category: 'framework',
+	},
+	{
+		name: 'React JS',
+		percentage: '75%',
+		icon: <React />,
+		category: 'framework',
+	},
+	{
+		name: 'Next JS',
+		percentage: '70%',
+		icon: <Next />,
+		category: 'framework',
+	},
+	{
+		name: 'Gatsby JS',
+		percentage: '40%',
+		icon: <Gatsby />,
+		category: 'framework',
+	},
+	{ name: 'Axios', percentage: '75%', icon: <Question />, category: 'tools' },
+	{
+		name: 'React-testing-library',
+		percentage: '30%',
+		icon: <Testinglibrary />,
+		category: 'testing',
+	},
+	{ name: 'Jest', percentage: '60%', icon: <Jest />, category: 'testing' },
+];
+
+export default skills;
