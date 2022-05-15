@@ -15,9 +15,10 @@ export const InterestContainer = styled.div`
 	display: flex;
 	justify-content: space-evenly;
 	@media screen and (max-width: 768px) {
+		/* border: 1px solid red; */
+		display: grid;
 		gap: 0.2em;
-		flex-direction: column;
-		align-items: center;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 	}
 `;
 export const Item = styled.div`
@@ -31,7 +32,8 @@ export const Item = styled.div`
 		color: white;
 	}
 	@media screen and (max-width: 768px) {
-		gap: 0;
+		/* border: 1px solid red; */
+		gap: 0.2em;
 		justify-content: start;
 		border-radius: 0;
 		width: 100%;

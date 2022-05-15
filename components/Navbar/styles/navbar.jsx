@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export const Navbar = styled.nav`
 	width: 100%;
-	background-color: #001ea0;
+	background-color: transparent;
 	position: fixed;
 	top: 0;
 	z-index: 9999;
@@ -43,7 +43,7 @@ export const Items = styled.div`
 export const Close = styled.button`
 	align-self: end;
 	cursor: pointer;
-	color: red;
+	color: white;
 	display: flex;
 	justify-content: center;
 	border: none;
@@ -57,11 +57,17 @@ export const Item = styled.a`
 	/* border: 1px solid red; */
 	padding: 0.4em 0.6em;
 	border-radius: 10px;
-	@media screen and (max-width: 992px) {
-		border-radius: 0;
-	}
 	&:hover {
 		color: yellow;
+	}
+	@media screen and (max-width: 992px) {
+		width: 100%;
+		text-align: center;
+		border-radius: 0;
+		&:hover {
+			color: white;
+			background-color: black;
+		}
 	}
 `;
 export const HamburgerMenu = styled.div`

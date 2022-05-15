@@ -33,11 +33,10 @@ const skills = [
 	},
 	{
 		name: 'Python',
-		percentage: '15%',
+		percentage: '10%',
 		icon: <Python />,
 		category: 'language',
 	},
-	{ name: 'C#', percentage: '5%', icon: <CSharp />, category: 'language' },
 	{
 		name: 'Arduino',
 		percentage: '30%',
@@ -88,13 +87,13 @@ const skills = [
 	},
 	{
 		name: 'Next JS',
-		percentage: '70%',
+		percentage: '20%',
 		icon: <Next />,
 		category: 'framework',
 	},
 	{
 		name: 'Gatsby JS',
-		percentage: '40%',
+		percentage: '20%',
 		icon: <Gatsby />,
 		category: 'framework',
 	},
@@ -105,7 +104,7 @@ const skills = [
 		icon: <Testinglibrary />,
 		category: 'testing',
 	},
-	{ name: 'Jest', percentage: '60%', icon: <Jest />, category: 'testing' },
+	{ name: 'Jest', percentage: '40%', icon: <Jest />, category: 'testing' },
 ];
 
 export default skills;

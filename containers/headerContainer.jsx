@@ -3,6 +3,7 @@ import { Header, Container } from '../components';
 const HeaderContainer = () => {
 	return (
 		<Header id='home'>
+			<Header.Clip />
 			<Container>
 				<Header.Inner>
 					<Header.Welcome>

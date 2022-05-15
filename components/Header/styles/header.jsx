@@ -5,7 +5,15 @@ export const Header = styled.section`
 	width: 100%;
 	min-height: 100vh;
 	/* border: 2px solid red; */
+`;
+export const Clip = styled.div`
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	background-color: #001ea0;
+	clip-path: polygon(0 0, 100% 100%, 100% 0);
 `;
 export const Inner = styled.div`
 	width: 100%;
@@ -41,8 +49,8 @@ export const SubTitle = styled.h5`
 `;
 export const Role = styled.span`
 	display: inline-block;
-	border-bottom: 1px solid yellow;
-	color: yellow;
+	border-bottom: 1px solid #2246e9;
+	color: #2246e9;
 `;
 export const Image = styled.img`
 	width: 30vw;

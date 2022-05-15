@@ -40,10 +40,9 @@ const AboutContainer = () => {
 									: new Date().getFullYear() - 2002}{' '}
 								years old. I{"'"}ve been learning coding for{' '}
 								{new Date().getFullYear() - 2017} years. I{"'"}m
-								working with React, Gatsby or Next JS. I have a
-								strong desire to learn programming more deeply.
-								and I will always be ready to learn new things
-								about it.
+								working with React JS. I have a strong desire to
+								learn programming more deeply. and I will always
+								be ready to learn new things about it.
 							</Profile.Details>
 							<Profile.FollowMe>
 								<Profile.Icon
