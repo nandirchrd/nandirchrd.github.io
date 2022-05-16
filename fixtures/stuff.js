@@ -6,6 +6,7 @@ import {
 	SiStyledcomponents as StyledComponent,
 	SiSocketdotio as SocketIo,
 	SiNpm as NPM,
+	SiRedux as Redux,
 } from 'react-icons/si';
 
 const stuff = [
@@ -24,6 +25,19 @@ const stuff = [
 			{
 				title: 'Open',
 				link: 'https://twitter.com/nandirchrd/status/1510640600227663872?cxt=HHwWgMDS_ejn7_YpAAAA',
+			},
+		],
+	},
+	{
+		title: 'React Redux Shopping Carts',
+		thumb: '/assets/images/shopping-carts.jpg',
+		description:
+			'This is just simple project just for learn how to use redux.',
+		tags: [<React key={'react'} />, <Redux key={'redux'} />],
+		open: [
+			{
+				title: 'Launch',
+				link: 'https://grand-sorbet-2e0ad1.netlify.app/',
 			},
 		],
 	},
