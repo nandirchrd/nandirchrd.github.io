@@ -47,6 +47,23 @@ const projects = [
 			},
 		],
 	},
+	{
+		title: 'Quran App',
+		thumb: '/assets/images/quran-app.jpg',
+		description:
+			'I used React and TailwindCSS. I fetched the API used Axios. Can play the audio.',
+		tags: [<React key={'react'} />, <Tailwind key={'react'} />, 'Axios'],
+		open: [
+			{
+				title: 'Launch',
+				link: 'https://quran-app-bayrack.netlify.app/',
+			},
+			{
+				title: 'Github',
+				link: 'https://github.com/nandirchrd/quran-app',
+			},
+		],
+	},
 ];
 
 export default projects;
