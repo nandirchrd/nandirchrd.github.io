@@ -43,6 +43,7 @@ export const Title = styled.h1`
 `;
 export const SubTitle = styled.h5`
 	font-size: 0.8em;
+	z-index: 2;
 	@media screen and (max-width: 768px) {
 		font-size: 0.8em;
 	}

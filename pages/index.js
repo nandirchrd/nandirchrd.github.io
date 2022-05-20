@@ -12,7 +12,6 @@ import React, { useState, useEffect } from 'react';
 
 export default function Home() {
 	const [navToggle, setNavToggle] = useState(false);
-
 	useEffect(() => {
 		let prevScrollpos = window.pageYOffset;
 		window.onscroll = function () {

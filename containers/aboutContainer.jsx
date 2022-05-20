@@ -5,7 +5,7 @@ import { RiComputerFill } from 'react-icons/ri';
 import { GiEarthAmerica } from 'react-icons/gi';
 import skills from '../fixtures/skills';
 import interest from '../fixtures/interest';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const AboutContainer = () => {
 	const [slice, setSlice] = useState(3);
@@ -17,7 +17,7 @@ const AboutContainer = () => {
 		});
 	};
 	return (
-		<About id='about'>
+		<About id='about' className='about'>
 			<Container>
 				<About.Inner>
 					<About.ProfilePicture>
@@ -115,14 +115,18 @@ const AboutContainer = () => {
 												<Skills.Name>
 													{skill.name}
 												</Skills.Name>
-												<Skills.Percent>
-													{skill.percentage}
-												</Skills.Percent>
+												<Skills.Percent
+													percentage={
+														skill.percentage
+													}
+												/>
 											</Skills.Top>
 											<Skills.Bottom>
 												<Skills.PercentageContainer>
 													<Skills.Percentage
-														width={skill.percentage}
+														percentage={
+															skill.percentage
+														}
 													/>
 												</Skills.PercentageContainer>
 											</Skills.Bottom>

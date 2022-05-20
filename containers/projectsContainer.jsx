@@ -18,8 +18,8 @@ const ProjectsContainer = ({ children, ...restProps }) => {
 									{project.description}
 								</Projects.Details>
 								<Projects.Tags>
-									{project.tags.map((tag) => (
-										<Projects.Tag key={tag}>
+									{project.tags.map((tag, id) => (
+										<Projects.Tag key={id}>
 											{tag}
 										</Projects.Tag>
 									))}
@@ -29,7 +29,7 @@ const ProjectsContainer = ({ children, ...restProps }) => {
 										<Link
 											href={open.link}
 											passHref={true}
-											key={open.link}>
+											key={open.title}>
 											<a target='_blank'>
 												<Projects.Button>
 													{open.title}

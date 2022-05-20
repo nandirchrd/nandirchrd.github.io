@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
 import { Header, Container } from '../components';
 
 const HeaderContainer = () => {
 	return (
 		<Header id='home'>
+			<img id='ghost' src='assets/images/ghost.png' />
 			<Header.Clip />
 			<Container>
 				<Header.Inner>

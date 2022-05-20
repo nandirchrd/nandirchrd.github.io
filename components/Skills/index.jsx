@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import {
 	Skills as Container,
 	Title,
@@ -34,8 +35,29 @@ Skills.Top = function SkillsTop({ children, ...restProps }) {
 Skills.Name = function SkillsName({ children, ...restProps }) {
 	return <Name {...restProps}>{children}</Name>;
 };
-Skills.Percent = function SkillsPercent({ children, ...restProps }) {
-	return <Percent {...restProps}>{children}</Percent>;
+Skills.Percent = function SkillsPercent({
+	children,
+	percentage,
+	...restProps
+}) {
+	const [start, setStart] = useState(0);
+
+	useEffect(() => {
+		let number = 0;
+		const startInterval = setInterval(function () {
+			number++;
+			if (number >= percentage) {
+				clearInterval(startInterval);
+			}
+			setStart((prev) => prev + 1);
+		}, 30);
+
+		return () => {
+			clearInterval(startInterval);
+		};
+	}, []);
+
+	return <Percent {...restProps}>{start + '%'}</Percent>;
 };
 Skills.Bottom = function SkillsBottom({ children, ...restProps }) {
 	return <Bottom {...restProps}>{children}</Bottom>;
@@ -46,8 +68,32 @@ Skills.PercentageContainer = function SkillsPercentageContainer({
 }) {
 	return <PercentageContainer {...restProps}>{children}</PercentageContainer>;
 };
-Skills.Percentage = function SkillsPercentage({ children, ...restProps }) {
-	return <Percentage {...restProps}>{children}</Percentage>;
+Skills.Percentage = function SkillsPercentage({
+	children,
+	percentage,
+	...restProps
+}) {
+	const [start, setStart] = useState(0);
+	useEffect(() => {
+		let number = 0;
+		const startInterval = setInterval(function () {
+			setStart((prev) => prev + 1);
+			number++;
+			if (number >= percentage) {
+				clearInterval(startInterval);
+			}
+		}, 30);
+
+		return () => {
+			clearInterval(startInterval);
+		};
+	}, []);
+
+	return (
+		<Percentage percentage={start} {...restProps}>
+			{children}
+		</Percentage>
+	);
 };
 Skills.ShowMore = function SkillsShowMore({ children, ...restProps }) {
 	return <ShowMore {...restProps}>{children}</ShowMore>;

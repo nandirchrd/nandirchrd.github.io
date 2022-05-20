@@ -17,3 +17,32 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+@keyframes ghost {
+  0%{
+    top: -80%;
+    right: 5%;
+  }
+  50%{
+    top: 10%;
+    left: 5%; 
+  }
+  100%{
+    top: -80%;
+    right: 5%;
+  }
+}
+
+#ghost{
+  display: none;
+}
+
+@media screen and (min-width: 992px){
+  #ghost{
+      display: block;
+      top: -80%;
+      left: 5%; 
+      position: absolute;
+      transform: rotate(220deg);
+	    animation: ghost 1s 5s linear alternate;
+  }
+}

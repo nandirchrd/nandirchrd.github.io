@@ -20,7 +20,7 @@ export const Icon = styled.div`
 	min-width: 80px;
 `;
 export const Percentage = styled.div`
-	width: ${({ width }) => width || '50%'};
+	width: ${({ percentage }) => percentage + '%' || '50%'};
 	height: 100%;
 	background-color: #001ea0;
 `;
