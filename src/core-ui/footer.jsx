@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../contexts/themeContext';
 
 const Footer = () => {
+	const { theme } = useContext(ThemeContext);
+
 	return (
-		<footer className='mt-2 border-t border-black'>
+		<footer
+			className={`${
+				theme === 'dark'
+					? 'bg-black text-white border-t border-white'
+					: 'bg-white text-black border-t border-black'
+			}`}>
 			<div className='container mx-auto p-2'>
 				<div className='footer-description text-center text-xs'>
 					<p>
 						Made with{' '}
 						<a
-							className='text-green-700'
+							className={`${
+								theme === 'dark'
+									? 'text-green-500'
+									: 'text-green-700'
+							}`}
 							rel='noreferrer'
 							target='_blank'
 							href='http://reactjs.org'>
@@ -16,7 +28,11 @@ const Footer = () => {
 						</a>{' '}
 						& Powered by{' '}
 						<a
-							className='text-green-700'
+							className={`${
+								theme === 'dark'
+									? 'text-green-500'
+									: 'text-green-700'
+							}`}
 							rel='noreferrer'
 							target='_blank'
 							href='http://sanity.io'>
@@ -26,7 +42,11 @@ const Footer = () => {
 					<p>
 						&copy; {new Date().getFullYear()}{' '}
 						<a
-							className='text-green-700'
+							className={`${
+								theme === 'dark'
+									? 'text-green-500'
+									: 'text-green-700'
+							}`}
 							rel='noreferrer'
 							target='_blank'
 							href='http://twitter.com/nandirchrd'>

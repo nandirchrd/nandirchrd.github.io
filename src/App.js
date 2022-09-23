@@ -2,13 +2,14 @@ import { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Footer, Navbar } from './core-ui';
 import { Home, Blogs, Blog, Photos, Photo } from './pages';
+import { ThemeProvider } from './contexts/themeContext';
 
 function App() {
 	useEffect(() => {
 		// Comp Did Mount
 	}, []);
 	return (
-		<>
+		<ThemeProvider>
 			{/* NAVBAR */}
 			<Navbar />
 			<Routes>
@@ -20,7 +21,7 @@ function App() {
 				<Route index path='*' element={<Navigate to='/' />} />
 			</Routes>
 			<Footer />
-		</>
+		</ThemeProvider>
 	);
 }
 
