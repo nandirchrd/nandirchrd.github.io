@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-p{
-    margin-bottom: 0.5em;
+main p{
+    margin-bottom: 0.5em !important;
 }

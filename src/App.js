@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Navbar } from './core-ui';
+import { Footer, Navbar } from './core-ui';
 import { Home, Blogs, Blog, Photos, Photo } from './pages';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
 				<Route index path='/photos/:slug' element={<Photo />} />
 				<Route index path='*' element={<Navigate to='/' />} />
 			</Routes>
+			<Footer />
 		</>
 	);
 }

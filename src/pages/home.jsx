@@ -4,7 +4,7 @@ import { FaReact } from 'react-icons/fa';
 
 const Home = () => {
 	return (
-		<div id='home' className='mt-20'>
+		<main id='home' className='mt-20'>
 			{/* LANDING PAGE */}
 			<section className='landing-page h-[75vh]'>
 				<div className='container mx-auto px-3 py-14 flex flex-col justify-between h-full border border-black'>
@@ -204,7 +204,7 @@ const Home = () => {
 					</h1>
 				</div>
 			</section>
-		</div>
+		</main>
 	);
 };
 
