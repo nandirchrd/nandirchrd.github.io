@@ -5,3 +5,6 @@
 main p{
     margin-bottom: 0.5em !important;
 }
+body, html{
+    overflow-x: hidden;
+}

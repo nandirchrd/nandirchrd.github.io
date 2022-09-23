@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BiMenuAltRight } from 'react-icons/bi';
+import { BiMenuAltRight, BiX } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import {
 	// HiOutlineLightBulb,
@@ -42,7 +42,7 @@ const Navbar = () => {
 					id='toggle-nav'
 					className='lg:hidden'
 					onClick={handleToggle}>
-					<BiMenuAltRight size={60} />
+					{!toggle ? <BiMenuAltRight size={60} /> : <BiX size={60} />}
 				</button>
 			</div>
 			{toggle && (
@@ -60,18 +60,24 @@ const Navbar = () => {
 								cursor={'pointer'}
 							/>
 						</li>
-						<li className='text-center p-3 hover:bg-black hover:text-white cursor-pointer'>
-							<Link>HOME</Link>
+						<li
+							onClick={handleToggle}
+							className='text-center p-3 hover:bg-black hover:text-white cursor-pointer'>
+							<Link to='/'>HOME</Link>
 						</li>
-						<li className='text-center p-3 hover:bg-black hover:text-white cursor-pointer'>
-							<Link>BLOG</Link>
+						<li
+							onClick={handleToggle}
+							className='text-center p-3 hover:bg-black hover:text-white cursor-pointer'>
+							<Link to='/blogs'>BLOG</Link>
 						</li>
-						<li className='text-center p-3 hover:bg-black hover:text-white cursor-pointer'>
-							<Link>PHOTOGRAPHY</Link>
+						<li
+							onClick={handleToggle}
+							className='text-center p-3 hover:bg-black hover:text-white cursor-pointer'>
+							<Link to='/photos'>PHOTOGRAPHY</Link>
 						</li>
 					</div>
 					<div className=''>
-						<li className='text-center p-3 bottom-0 bg-black text-white'>
+						<li className='text-center p-3 bottom-0 bg-black text-white cursor-pointer'>
 							<Link>Download Resume</Link>
 						</li>
 					</div>

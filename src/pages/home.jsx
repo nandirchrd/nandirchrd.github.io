@@ -1,13 +1,16 @@
 import { FiCodepen, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
 import { GrGoogle } from 'react-icons/gr';
 import { FaReact } from 'react-icons/fa';
+import { Cards } from '../components';
+import projects from '../constants/projects';
+import stuff from '../constants/stuff';
 
 const Home = () => {
 	return (
 		<main id='home' className='mt-20'>
 			{/* LANDING PAGE */}
 			<section className='landing-page h-[75vh]'>
-				<div className='container mx-auto px-3 py-14 flex flex-col justify-between h-full border border-black'>
+				<div className='container mx-auto px-3 py-14 flex flex-col justify-between h-full border border-black lg:py-8'>
 					<div className='lg:flex'>
 						<div className='flex border flex-col justify-evenly min-h-[12em] max-w-lg'>
 							<p>Hi, my name is,</p>
@@ -192,8 +195,11 @@ const Home = () => {
 			<section className='mt-2'>
 				<div className='container mx-auto border border-black p-3'>
 					<h1 className='text-center text-xl font-semibold border border-black'>
-						PROJECTS
+						PROJECTS I'VE WORKED ON
 					</h1>
+					<div className='mt-4'>
+						<Cards datas={projects} />
+					</div>
 				</div>
 			</section>
 			{/* SOMETHING I'VE BUILT */}
@@ -202,6 +208,9 @@ const Home = () => {
 					<h1 className='text-center text-xl font-semibold border border-black'>
 						SOMETHING I'VE BUILT
 					</h1>
+					<div className='mt-4'>
+						<Cards datas={stuff} />
+					</div>
 				</div>
 			</section>
 		</main>
