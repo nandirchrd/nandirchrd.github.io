@@ -2,9 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body, html{
+    overflow-x: hidden;
+}
 main p{
     margin-bottom: 0.5em !important;
 }
-body, html{
-    overflow-x: hidden;
+
+/* 
+    === COMPONENTS ===
+*/
+
+/* NAVBAR */
+.navbar{
+    @apply fixed w-full top-0 overflow-hidden z-50 
+}
+
+.navbar-brand{
+    @apply py-3
+}
+
+.navbar-nav{
+    @apply hidden p-3 lg:flex lg:gap-5 lg:items-center
+}
+.nav-item{
+
+}
+.nav-link{
+    @apply hover:text-green-500
+}
+.navbar-toggle{
+    @apply lg:hidden hover:text-green-500
+}
+.navbar-nav-mobile{
+    @apply p-3 pb-20 h-[90vh] lg:hidden
+}
+.mobile-nav-mode{
+    @apply flex justify-between p-3 border-b border-white border-opacity-10
+}
+.mobile-nav-item{
+    @apply p-3 text-center cursor-pointer
+}
+.mobile-resume-item{
+    @apply text-center p-3 bottom-0 cursor-pointer bg-white text-black
+}
+.dark{
+    @apply bg-black text-white
+}
+
+.light{
+    @apply bg-white text-black
 }

@@ -1,4 +1,13 @@
+import { useContext, useEffect } from 'react';
+import { ActivePageContext } from '../contexts/activePageContext';
+
 const Photos = () => {
+	const { setPage } = useContext(ActivePageContext);
+
+	useEffect(() => {
+		setPage('photos');
+	}, [setPage]);
+
 	return (
 		<main id='photos' className='mt-20'>
 			<section>

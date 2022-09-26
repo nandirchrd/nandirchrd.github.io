@@ -8,14 +8,24 @@ import {
 	HiMoon,
 	HiOutlineMoon,
 } from 'react-icons/hi';
+import { ActivePageContext } from '../contexts/activePageContext';
+import Logo from '../assets/images/logo.png';
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	const { theme, toggle: toggleTheme } = useContext(ThemeContext);
+	const { page } = useContext(ActivePageContext);
 
 	useEffect(() => {
-		console.log(theme);
-	}, [theme]);
+		console.log(theme, page);
+		if (theme === 'dark') {
+			document.body.classList.add('dark');
+			document.body.classList.remove('light');
+		} else {
+			document.body.classList.add('light');
+			document.body.classList.remove('dark');
+		}
+	}, [theme, page]);
 
 	const handleToggle = () => {
 		setToggle((prev) => !prev);
@@ -25,26 +35,36 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav
-			className={`navbar fixed w-full top-0 overflow-hidden z-50 bg-black text-white`}>
-			<div className={`container mx-auto flex justify-between`}>
-				<div className='brand p-3 flex justify-center items-center'>
-					<span className='text-5xl font-bold'>N</span>
+		<nav className='navbar dark'>
+			<div className='container flex justify-between'>
+				{/* NAVBAR BRAND */}
+				<div className='navbar-brand max-w-[45px]'>
+					{/* BRAND HERE */}
+					<img src={Logo} className='h-full' alt='My logo' />
 				</div>
-				<ul
-					className={`navbar-nav hidden p-3 lg:flex gap-5 items-center`}>
-					<li className='navbar-item'>
-						<Link to='/' className='hover:text-green-500'>
+				{/* NAVBAR NAV */}
+				<ul className={`navbar-nav`}>
+					<li
+						className={`nav-item ${
+							page === 'home' && 'text-green-500'
+						}`}>
+						<Link to='/' className='nav-link'>
 							Home
 						</Link>
 					</li>
-					<li className='navbar-item'>
-						<Link to='/blogs' className='hover:text-green-500'>
+					<li
+						className={`nav-item ${
+							page === 'blogs' && 'text-green-500'
+						}`}>
+						<Link to='/blogs' className='nav-link'>
 							Blog
 						</Link>
 					</li>
-					<li className='navbar-item'>
-						<Link to='/photos' className='hover:text-green-500'>
+					<li
+						className={`nav-item ${
+							page === 'photos' && 'text-green-500'
+						}`}>
+						<Link to='/photos' className='nav-link'>
 							Photography
 						</Link>
 					</li>
@@ -67,11 +87,8 @@ const Navbar = () => {
 						/>
 					)}
 				</button>
-				{/* RESPONSIVE MOBILE TOGGLE */}
-				<button
-					id='toggle-nav'
-					className='lg:hidden hover:text-green-500'
-					onClick={handleToggle}>
+				{/* RESPONSIVE TOGGLE MOBILE */}
+				<button className='navbar-toggle' onClick={handleToggle}>
 					{!toggle ? (
 						<BiMenuAltRight size={60} />
 					) : (
@@ -84,10 +101,10 @@ const Navbar = () => {
 			</div>
 			{toggle && (
 				<ul
-					className={`px-3 py-3 flex flex-col justify-between h-[90vh] container mx-auto lg:hidden pb-[5rem]`}>
-					<div>
-						<li
-							className={`flex justify-between p-3 border-b border-white border-opacity-10`}>
+					className={`container navbar-nav-mobile flex flex-col justify-between`}>
+					{/* NAVIGATION */}
+					<div className='mobile-nav'>
+						<li className='mobile-nav-mode'>
 							{theme === 'dark' && (
 								<>
 									<HiMoon
@@ -131,35 +148,32 @@ const Navbar = () => {
 						</li>
 						<li
 							onClick={handleToggle}
-							className={`text-center p-3 cursor-pointer ${
-								theme === 'dark'
-									? 'hover:bg-white hover:text-black'
-									: 'hover:bg-black hover:text-white'
-							}`}>
+							className={`mobile-nav-item hover:text-green-500 ${
+								page === 'home' &&
+								'border-b-2 border-green-500 text-green-500'
+							} `}>
 							<Link to='/'>HOME</Link>
 						</li>
 						<li
 							onClick={handleToggle}
-							className={`text-center p-3 cursor-pointer ${
-								theme === 'dark'
-									? 'hover:bg-white hover:text-black'
-									: 'hover:bg-black hover:text-white'
-							}`}>
+							className={`mobile-nav-item hover:text-green-500  ${
+								page === 'blogs' &&
+								'border-b-2 border-green-500 text-green-500'
+							} `}>
 							<Link to='/blogs'>BLOG</Link>
 						</li>
 						<li
 							onClick={handleToggle}
-							className={`text-center p-3 cursor-pointer ${
-								theme === 'dark'
-									? 'hover:bg-white hover:text-black'
-									: 'hover:bg-black hover:text-white'
-							}`}>
+							className={`mobile-nav-item hover:text-green-500 ${
+								page === 'photos' &&
+								'border-b-2 border-green-500 text-green-500'
+							} `}>
 							<Link to='/photos'>PHOTOGRAPHY</Link>
 						</li>
 					</div>
-					<div className=''>
-						<li
-							className={`text-center p-3 bottom-0 cursor-pointer bg-black text-white bg-white text-black`}>
+					{/* RESUME */}
+					<div className='mobile-resume'>
+						<li className={`mobile-resume-item`}>
 							<Link>Download Resume</Link>
 						</li>
 					</div>

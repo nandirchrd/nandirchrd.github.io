@@ -40,6 +40,20 @@ const Footer = () => {
 						</a>
 					</p>
 					<p>
+						Source the 3D model{' '}
+						<a
+							className={`${
+								theme === 'dark'
+									? 'text-green-500'
+									: 'text-green-700'
+							}`}
+							target='_blank'
+							href='https://market.pmnd.rs/creator/alaricbaraou'
+							rel='noreferrer'>
+							alaricbaraou
+						</a>
+					</p>
+					<p>
 						&copy; {new Date().getFullYear()}{' '}
 						<a
 							className={`${

@@ -1,15 +1,28 @@
 import { FiCodepen, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
-import { GrGoogle } from 'react-icons/gr';
-import { FaReact } from 'react-icons/fa';
 import { Cards } from '../components';
 import projects from '../constants/projects';
 import stuff from '../constants/stuff';
 import { ThemeContext } from '../contexts/themeContext';
 import { useContext } from 'react';
 import { FcGoogle } from 'react-icons/fc';
+import { Canvas } from '@react-three/fiber';
+import { Suspense } from 'react';
+import Character from '../models/character';
+import { OrbitControls } from '@react-three/drei';
+import { ActivePageContext } from '../contexts/activePageContext';
+import skills from '../constants/skills';
+import { useEffect } from 'react';
+import Skills from '../components/skills';
+import ItsTime from '../assets/music/its-time.mp3';
 
 const Home = () => {
 	const { theme } = useContext(ThemeContext);
+	const { setPage } = useContext(ActivePageContext);
+	const bruceBuffer = new Audio(ItsTime);
+
+	useEffect(() => {
+		setPage('home');
+	}, [setPage]);
 
 	return (
 		<main
@@ -19,7 +32,7 @@ const Home = () => {
 			}`}>
 			{/* LANDING PAGE */}
 			<section className='landing-page h-[75vh]'>
-				<div className='container mx-auto px-3 py-10 flex flex-col justify-between h-full lg:py-8'>
+				<div className='container px-3 py-10 flex flex-col justify-between h-full lg:py-8'>
 					<div className='lg:flex'>
 						<div className='flex flex-col justify-evenly min-h-[12em] max-w-lg'>
 							<p>Hi, my name is,</p>
@@ -32,8 +45,10 @@ const Home = () => {
 							<p>
 								I'm a front developer working with{' '}
 								<a
-									className={`text-green-700 hover:text-green-500 ${
-										theme === 'dark' && 'text-green-500'
+									className={` ${
+										theme === 'dark'
+											? 'text-green-500'
+											: 'text-green-700'
 									}`}
 									href='http://reactjs.org'
 									rel='noreferrer'
@@ -44,9 +59,26 @@ const Home = () => {
 								and I dedicate my life to it.
 							</p>
 						</div>
-						<canvas
+						<Canvas className='cursor-grab hidden lg:block'>
+							<OrbitControls />
+							<ambientLight
+								intensity={theme === 'dark' ? 0.2 : 0.5}
+							/>
+							<directionalLight
+								intensity={0.2}
+								position={[0, 2, 2]}
+							/>
+							<Suspense fallback={false}>
+								<Character
+									scale={3.5}
+									position={[0, -2.8, 0]}
+									castShadow={true}
+								/>
+							</Suspense>
+						</Canvas>
+						{/* <canvas
 							id='3d-model'
-							className='hidden w-full bg-red-500 lg:block'></canvas>
+							className='hidden w-full bg-red-500 lg:block'></canvas> */}
 					</div>
 					<div className='social-media flex justify-around'>
 						<a
@@ -55,7 +87,7 @@ const Home = () => {
 									? 'hover:text-green-500'
 									: 'hover:text-green-500 hover:bg-black '
 							}`}
-							href='http://reactjs.org'
+							href='https://github.com/nandirchrd'
 							rel='noreferrer'
 							target='_blank'>
 							<FiGithub />
@@ -66,7 +98,7 @@ const Home = () => {
 									? 'hover:text-green-500'
 									: 'hover:text-green-500 hover:bg-black '
 							}`}
-							href='http://reactjs.org'
+							href='https://www.linkedin.com/in/nandi-setiadi-157b31228/'
 							rel='noreferrer'
 							target='_blank'>
 							<FiLinkedin />
@@ -78,7 +110,7 @@ const Home = () => {
 									? 'border-white hover:border-green-500'
 									: 'border-black hover:border-green-700'
 							}`}
-							href='http://reactjs.org'
+							href='mailto:nandirchrd@gmail.com'
 							rel='noreferrer'
 							target='_blank'>
 							<FcGoogle size={40} />
@@ -89,7 +121,7 @@ const Home = () => {
 									? 'hover:text-green-500'
 									: 'hover:text-green-500 hover:bg-black '
 							}`}
-							href='http://reactjs.org'
+							href='https://twitter.com/nandirchrd'
 							rel='noreferrer'
 							target='_blank'>
 							<FiTwitter />
@@ -100,7 +132,7 @@ const Home = () => {
 									? 'hover:text-green-500'
 									: 'hover:text-green-500 hover:bg-black '
 							}`}
-							href='http://reactjs.org'
+							href='http://codepen.io/nandirchrd'
 							rel='noreferrer'
 							target='_blank'>
 							<FiCodepen />
@@ -126,7 +158,8 @@ const Home = () => {
 						<p>
 							The first proggramming language I learn was{' '}
 							<a
-								href='http://cplus.com'
+								href='http://cplusplus.com'
+								target='_blank'
 								rel='noreferrer'
 								className={`${
 									theme === 'dark'
@@ -137,7 +170,8 @@ const Home = () => {
 							</a>
 							. And then in 2nd, I got to know{' '}
 							<a
-								href='http://cplus.com'
+								href='http://javascript.com'
+								target='_blank'
 								rel='noreferrer'
 								className={`${
 									theme === 'dark'
@@ -149,7 +183,8 @@ const Home = () => {
 							. After graduated, I continued to learn it more
 							deeply on the internet. I got know{' '}
 							<a
-								href='http://cplus.com'
+								href='http://reactjs.org'
+								target='_blank'
 								rel='noreferrer'
 								className={`${
 									theme === 'dark'
@@ -163,7 +198,8 @@ const Home = () => {
 						<p>
 							My vision is want to be mastered at{' '}
 							<a
-								href='http://cplus.com'
+								href='http://javascript.com'
+								target='_blank'
 								rel='noreferrer'
 								className={`${
 									theme === 'dark'
@@ -177,100 +213,8 @@ const Home = () => {
 						</p>
 						<p>Here some technologies I've learned:</p>
 					</div>
-					<div
-						className={`skills border-l-4 border-opacity-80 ${
-							theme === 'dark' ? 'border-white' : 'border-black'
-						}`}>
-						<div className='flex justify-between relative mb-2 '>
-							<span
-								className={`w-1/2 flex items-end justify-center border-l-4 border-opacity-80 ${
-									theme === 'dark'
-										? 'border-white'
-										: 'border-black'
-								}`}>
-								REACT JS
-							</span>
-							<span className='px-2'>
-								<FaReact size={40} className='p-1' />
-							</span>
-							<span className='w-1/2 flex items-end justify-center'>
-								BASIC
-							</span>
-						</div>
-						<div className='flex justify-between relative mb-2 '>
-							<span
-								className={`w-1/2 flex items-end justify-center border-l-4 border-opacity-80 ${
-									theme === 'dark'
-										? 'border-white'
-										: 'border-black'
-								}`}>
-								REACT JS
-							</span>
-							<span className='px-2'>
-								<FaReact size={40} className='p-1' />
-							</span>
-							<span className='w-1/2 flex items-end justify-center'>
-								BASIC
-							</span>
-						</div>
-						<div className='flex justify-between relative mb-2 '>
-							<span
-								className={`w-1/2 flex items-end justify-center border-l-4 border-opacity-80 ${
-									theme === 'dark'
-										? 'border-white'
-										: 'border-black'
-								}`}>
-								REACT JS
-							</span>
-							<span className='px-2'>
-								<FaReact size={40} className='p-1' />
-							</span>
-							<span className='w-1/2 flex items-end justify-center'>
-								BASIC
-							</span>
-						</div>
-						<div className='flex justify-between relative mb-2 '>
-							<span
-								className={`w-1/2 flex items-end justify-center border-l-4 border-opacity-80 ${
-									theme === 'dark'
-										? 'border-white'
-										: 'border-black'
-								}`}>
-								REACT JS
-							</span>
-							<span className='px-2'>
-								<FaReact size={40} className='p-1' />
-							</span>
-							<span className='w-1/2 flex items-end justify-center'>
-								BASIC
-							</span>
-						</div>
-						<div className='flex justify-between relative mb-2 '>
-							<span
-								className={`w-1/2 flex items-end justify-center border-l-4 border-opacity-80 ${
-									theme === 'dark'
-										? 'border-white'
-										: 'border-black'
-								}`}>
-								REACT JS
-							</span>
-							<span className='px-2'>
-								<FaReact size={40} className='p-1' />
-							</span>
-							<span className='w-1/2 flex items-end justify-center'>
-								BASIC
-							</span>
-						</div>
-					</div>
-					{/* LOAD MORE */}
-					<button
-						className={`border w-full text-center p-1 ${
-							theme === 'dark'
-								? 'hover:bg-green-500 hover:border-green-500 hover:text-white border-white'
-								: 'hover:bg-black hover:text-white border-black'
-						}  `}>
-						LOAD MORE
-					</button>
+					{/* SKILLS */}
+					<Skills data={skills} />
 					{/* FACTS ABOUT ME */}
 					<div className='facts-about-me mt-2 flex'>
 						<h1 className='min-w-[8.5em] px-2 py-3'>
@@ -278,6 +222,7 @@ const Home = () => {
 						</h1>
 						<div className='p-2 grid grid-cols-[repeat(auto-fit,_minmax(170px,_1fr))] w-full gap-2'>
 							<button
+								onClick={() => bruceBuffer.play()}
 								className={`p-1 border rounded-md ${
 									theme === 'dark'
 										? 'border-white hover:bg-green-500 hover:text-black hover:border-green-500'
@@ -331,8 +276,11 @@ const Home = () => {
 			</section>
 			{/* PROJECTS */}
 			<section className='mt-2'>
-				<div className='container mx-auto border border-black p-3'>
-					<h1 className='text-center text-xl font-semibold border border-black'>
+				<div className='container p-3'>
+					<h1
+						className={`p-2 text-center text-xl font-semibold border-b ${
+							theme === 'dark' ? 'border-white' : 'border-dark'
+						}`}>
 						PROJECTS I'VE WORKED ON
 					</h1>
 					<div className='mt-4'>
@@ -342,8 +290,11 @@ const Home = () => {
 			</section>
 			{/* SOMETHING I'VE BUILT */}
 			<section className='mt-2'>
-				<div className='container mx-auto border border-black p-3'>
-					<h1 className='text-center text-xl font-semibold border border-black'>
+				<div className='container p-3'>
+					<h1
+						className={`p-2 text-center text-xl font-semibold border-b ${
+							theme === 'dark' ? 'border-white' : 'border-dark'
+						}`}>
 						SOMETHING I'VE BUILT
 					</h1>
 					<div className='mt-4'>

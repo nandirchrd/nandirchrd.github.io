@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+
 const Blog = () => {
 	const { slug } = useParams();
 	return (

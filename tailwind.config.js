@@ -2,6 +2,10 @@
 module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
+		container: {
+			center: true,
+			padding: '0.5em',
+		},
 		extend: {},
 	},
 	plugins: [],
