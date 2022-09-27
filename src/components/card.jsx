@@ -6,11 +6,11 @@ const Card = ({ data }) => {
 	return (
 		<div className='lg:flex lg:gap-4 lg:px-2'>
 			<img
-				className='block rounded-tl-md rounded-tr-3xl lg:w-32 lg:h-32 my-auto'
+				className='block aspect-square w-full rounded-tl-md rounded-tr-3xl lg:max-w-[10rem] lg:max-h-[10rem] my-auto'
 				alt={data.title}
 				src={data.thumb || ''}
 			/>
-			<div className='card-body w-full'>
+			<div className='card-body w-full lg:h-full lg:flex lg:flex-col my-auto'>
 				<h1 className='font-semibold text-lg py-1'>{data.title}</h1>
 				<p className='text-sm font-light'>{data.description}</p>
 				<div className='flex gap-1 -mt-2 py-1 flex-nowrap'>

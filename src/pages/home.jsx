@@ -14,6 +14,7 @@ import skills from '../constants/skills';
 import { useEffect } from 'react';
 import Skills from '../components/skills';
 import ItsTime from '../assets/music/its-time.mp3';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	const { theme } = useContext(ThemeContext);
@@ -150,12 +151,12 @@ const Home = () => {
 						ABOUT ME
 					</h1>
 					<div className='description mt-4'>
-						<p>
+						<p className='mb-2'>
 							Hi! My name is Nandi. I love developing applications
 							especially on the web. I got to know proggramming
 							when I started to enter high school (5 years ago).
 						</p>
-						<p>
+						<p className='mb-2'>
 							The first proggramming language I learn was{' '}
 							<a
 								href='http://cplusplus.com'
@@ -195,7 +196,7 @@ const Home = () => {
 							</a>{' '}
 							and started to fall in love with it.
 						</p>
-						<p>
+						<p className='mb-2'>
 							My vision is want to be mastered at{' '}
 							<a
 								href='http://javascript.com'
@@ -211,7 +212,9 @@ const Home = () => {
 							. I'm gonna learn more deeply about Front-End stuff
 							and some Back-End then I'll go to the Hybrid App.
 						</p>
-						<p>Here some technologies I've learned:</p>
+						<p className='mb-2'>
+							Here some technologies I've learned:
+						</p>
 					</div>
 					{/* SKILLS */}
 					<Skills data={skills} />
@@ -268,7 +271,7 @@ const Home = () => {
 										? 'border-white hover:bg-green-500 hover:text-black hover:border-green-500'
 										: 'border-black hover:bg-black hover:text-white'
 								}`}>
-								Photography
+								<Link to='/photos'>Photography</Link>
 							</button>
 						</div>
 					</div>

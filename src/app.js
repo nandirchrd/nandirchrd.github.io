@@ -19,7 +19,7 @@ function App() {
 					<Route index path='/blogs' element={<Blogs />} />
 					<Route index path='/blogs/:slug' element={<Blog />} />
 					<Route index path='/photos' element={<Photos />} />
-					<Route index path='/photos/:slug' element={<Photo />} />
+					<Route index path='/photos/:id' element={<Photo />} />
 					<Route index path='*' element={<Navigate to='/' />} />
 				</Routes>
 				<Footer />

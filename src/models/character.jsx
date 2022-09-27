@@ -33,6 +33,4 @@ export default function Character(props) {
 	);
 }
 
-useGLTF.preload(
-	'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/druid/model.gltf'
-);
+useGLTF.preload('./model.gltf');

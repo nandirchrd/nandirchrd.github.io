@@ -6,13 +6,13 @@ const Footer = () => {
 
 	return (
 		<footer
-			className={`${
+			className={`flex justify-center items-center text-center ${
 				theme === 'dark'
 					? 'bg-black text-white border-t border-white'
 					: 'bg-white text-black border-t border-black'
 			}`}>
 			<div className='container mx-auto p-2'>
-				<div className='footer-description text-center text-xs'>
+				<div className='footer-description text-xs'>
 					<p>
 						Made with{' '}
 						<a
