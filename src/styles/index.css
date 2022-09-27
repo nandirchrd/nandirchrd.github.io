@@ -6,9 +6,6 @@
 body, html{
     overflow-x: hidden;
 }
-main p{
-    margin-bottom: 0.5em !important;
-}
 
 /* 
     === COMPONENTS ===

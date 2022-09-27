@@ -36,6 +36,7 @@ const projects = [
 		],
 	},
 	{
+		id: 2,
 		title: 'Netflix Clone',
 		thumb: NetflixClone,
 		description:
@@ -53,6 +54,7 @@ const projects = [
 		],
 	},
 	{
+		id: 3,
 		title: 'Quran App',
 		thumb: QuranApp,
 		description:

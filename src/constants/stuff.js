@@ -4,6 +4,7 @@ import NoThumb from '../assets/images/stuff/no-thumb.jpg';
 
 const stuff = [
 	{
+		id: 1,
 		title: 'Arduino Led Connected With Socket Io (IoT)',
 		thumb: NoThumb,
 		description:
@@ -17,6 +18,7 @@ const stuff = [
 		],
 	},
 	{
+		id: 2,
 		title: 'React Redux Shopping Carts',
 		thumb: ReactRedux,
 		description:
