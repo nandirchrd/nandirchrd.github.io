@@ -1,19 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ba44705.css",
-    "main.js": "/static/js/main.e0e61abd.js",
+    "main.css": "/static/css/main.fa0c8264.css",
+    "main.js": "/static/js/main.b1b8b1e6.js",
+    "static/media/sunset-one.jpg": "/static/media/sunset-one.aa3ff6c2487791742022.jpg",
+    "static/media/stones.jpg": "/static/media/stones.e0ba96038b475eee52d1.jpg",
+    "static/media/sunset-two.jpg": "/static/media/sunset-two.df1b81dd60c21660b85d.jpg",
+    "static/media/tree-stands.jpg": "/static/media/tree-stands.3046f3bd7695b83fce5d.jpg",
+    "static/media/circle-pink.jpg": "/static/media/circle-pink.96655317c257e631d8e8.jpg",
+    "static/media/grasshopper.jpg": "/static/media/grasshopper.69ae0cceaed7e35d1aa8.jpg",
+    "static/media/i-dont-know.jpg": "/static/media/i-dont-know.9cc99695c1fe43c5223a.jpg",
+    "static/media/flower.jpg": "/static/media/flower.4afa23b6b3f27cb834d1.jpg",
+    "static/media/i-dont-know-hehe.jpg": "/static/media/i-dont-know-hehe.e7f9712e9b24622d8ece.jpg",
+    "static/media/caterpillar.jpg": "/static/media/caterpillar.0f156391a8fcfd91a32e.jpg",
     "static/media/netflix-clone.jpg": "/static/media/netflix-clone.963e32476cd09020f09d.jpg",
+    "static/media/green-bubbles.jpg": "/static/media/green-bubbles.128535a021492b3efb58.jpg",
     "static/media/shopping-carts.jpg": "/static/media/shopping-carts.a696d2a6652348942abc.jpg",
     "static/media/whatsapp-clone.jpg": "/static/media/whatsapp-clone.51cb1ffccc8a7f1117ea.jpg",
+    "static/media/mosque.jpg": "/static/media/mosque.91384c59af0ec4d21d18.jpg",
     "static/media/quran-app.jpg": "/static/media/quran-app.527ca6d8779f2fb02e79.jpg",
     "static/media/its-time.mp3": "/static/media/its-time.cdb0214f6c3e6fb8e98a.mp3",
     "static/media/logo.png": "/static/media/logo.dfc56abbdde59016ad18.png",
     "index.html": "/index.html",
-    "main.3ba44705.css.map": "/static/css/main.3ba44705.css.map",
-    "main.e0e61abd.js.map": "/static/js/main.e0e61abd.js.map"
+    "main.fa0c8264.css.map": "/static/css/main.fa0c8264.css.map",
+    "main.b1b8b1e6.js.map": "/static/js/main.b1b8b1e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ba44705.css",
-    "static/js/main.e0e61abd.js"
+    "static/css/main.fa0c8264.css",
+    "static/js/main.b1b8b1e6.js"
   ]
 }
