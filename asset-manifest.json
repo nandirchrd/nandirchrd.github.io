@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.803d401c.css",
-    "main.js": "/static/js/main.676821a1.js",
+    "main.js": "/static/js/main.11bf6f02.js",
     "static/media/sunset-one.jpg": "/static/media/sunset-one.aa3ff6c2487791742022.jpg",
     "static/media/stones.jpg": "/static/media/stones.e0ba96038b475eee52d1.jpg",
     "static/media/sunset-two.jpg": "/static/media/sunset-two.df1b81dd60c21660b85d.jpg",
@@ -13,19 +13,23 @@
     "static/media/i-dont-know-hehe.jpg": "/static/media/i-dont-know-hehe.e7f9712e9b24622d8ece.jpg",
     "static/media/caterpillar.jpg": "/static/media/caterpillar.0f156391a8fcfd91a32e.jpg",
     "static/media/netflix-clone.jpg": "/static/media/netflix-clone.963e32476cd09020f09d.jpg",
+    "static/media/xstreams-app.jpg": "/static/media/xstreams-app.0705f051da970ad61c75.jpg",
     "static/media/green-bubbles.jpg": "/static/media/green-bubbles.128535a021492b3efb58.jpg",
     "static/media/shopping-carts.jpg": "/static/media/shopping-carts.a696d2a6652348942abc.jpg",
     "static/media/whatsapp-clone.jpg": "/static/media/whatsapp-clone.51cb1ffccc8a7f1117ea.jpg",
+    "static/media/resume.pdf": "/static/media/resume.0acfb8732fb6cd243fa7.pdf",
     "static/media/mosque.jpg": "/static/media/mosque.91384c59af0ec4d21d18.jpg",
+    "static/media/vidly-app.jpg": "/static/media/vidly-app.af87596fae02df57f1d0.jpg",
     "static/media/quran-app.jpg": "/static/media/quran-app.527ca6d8779f2fb02e79.jpg",
     "static/media/its-time.mp3": "/static/media/its-time.cdb0214f6c3e6fb8e98a.mp3",
+    "static/media/three-ball.jpg": "/static/media/three-ball.cfded600a45eec8a6c9d.jpg",
     "static/media/logo.png": "/static/media/logo.dfc56abbdde59016ad18.png",
     "index.html": "/index.html",
     "main.803d401c.css.map": "/static/css/main.803d401c.css.map",
-    "main.676821a1.js.map": "/static/js/main.676821a1.js.map"
+    "main.11bf6f02.js.map": "/static/js/main.11bf6f02.js.map"
   },
   "entrypoints": [
     "static/css/main.803d401c.css",
-    "static/js/main.676821a1.js"
+    "static/js/main.11bf6f02.js"
   ]
 }
