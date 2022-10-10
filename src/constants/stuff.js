@@ -1,15 +1,18 @@
 import {
 	SiBootstrap,
+	SiCanonical,
 	SiExpress,
 	SiGithub,
 	SiJsonwebtokens,
 	SiReact,
 	SiRedux,
 	SiSocketdotio,
+	SiThreedotjs,
 } from 'react-icons/si';
 import ReactRedux from '../assets/images/stuff/shopping-carts.jpg';
 import NoThumb from '../assets/images/stuff/no-thumb.jpg';
 import VidlyApp from '../assets/images/stuff/vidly-app.jpg';
+import ThreeBall from '../assets/images/stuff/three-ball.jpg';
 
 const stuff = [
 	{
@@ -54,6 +57,19 @@ const stuff = [
 			{
 				label: <SiGithub />,
 				link: 'https://github.com/nandirchrd/learning-react-with-mosh',
+			},
+		],
+	},
+	{
+		id: 4,
+		title: 'Three Ball',
+		thumb: ThreeBall,
+		description: 'Learned some three js stuff',
+		tags: [<SiThreedotjs />, <SiCanonical />],
+		actions: [
+			{
+				label: 'Launch',
+				link: 'https://rchrd-three-ball.netlify.app',
 			},
 		],
 	},
