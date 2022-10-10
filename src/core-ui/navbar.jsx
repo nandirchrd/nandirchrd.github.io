@@ -10,7 +10,7 @@ import {
 } from 'react-icons/hi';
 import { ActivePageContext } from '../contexts/activePageContext';
 import Logo from '../assets/images/logo.png';
-
+import Resume from '../assets/resume/resume.pdf';
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	const { theme, toggle: toggleTheme } = useContext(ThemeContext);
@@ -174,7 +174,9 @@ const Navbar = () => {
 					{/* RESUME */}
 					<div className='mobile-resume'>
 						<li className={`mobile-resume-item`}>
-							<Link>Download Resume</Link>
+							<a download href={Resume}>
+								Download Resume
+							</a>
 						</li>
 					</div>
 				</ul>

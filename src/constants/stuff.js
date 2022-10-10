@@ -1,6 +1,15 @@
-import { SiExpress, SiReact, SiRedux, SiSocketdotio } from 'react-icons/si';
+import {
+	SiBootstrap,
+	SiExpress,
+	SiGithub,
+	SiJsonwebtokens,
+	SiReact,
+	SiRedux,
+	SiSocketdotio,
+} from 'react-icons/si';
 import ReactRedux from '../assets/images/stuff/shopping-carts.jpg';
 import NoThumb from '../assets/images/stuff/no-thumb.jpg';
+import VidlyApp from '../assets/images/stuff/vidly-app.jpg';
 
 const stuff = [
 	{
@@ -28,6 +37,23 @@ const stuff = [
 			{
 				label: 'Launch',
 				link: 'https://grand-sorbet-2e0ad1.netlify.app/',
+			},
+		],
+	},
+	{
+		id: 3,
+		title: 'Vidly App',
+		thumb: VidlyApp,
+		description: 'I learned react with mosh and here si the final project',
+		tags: [<SiReact />, <SiBootstrap />, <SiJsonwebtokens />],
+		actions: [
+			{
+				label: 'Launch',
+				link: 'https://rchrd-vidly.netlify.app/',
+			},
+			{
+				label: <SiGithub />,
+				link: 'https://github.com/nandirchrd/learning-react-with-mosh',
 			},
 		],
 	},

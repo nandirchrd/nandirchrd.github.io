@@ -5,11 +5,13 @@ import {
 	SiExpress,
 	SiSocketdotio,
 	SiGithub,
+	SiMongodb,
 } from 'react-icons/si';
 
 import WhatsAppClone from '../assets/images/projects/whatsapp-clone.jpg';
 import NetflixClone from '../assets/images/projects/netflix-clone.jpg';
 import QuranApp from '../assets/images/projects/quran-app.jpg';
+import XstreamsApp from '../assets/images/projects/xstreams-app.jpg';
 
 const projects = [
 	{
@@ -68,6 +70,23 @@ const projects = [
 			{
 				label: <SiGithub />,
 				link: 'https://github.com/nandirchrd/quran-app',
+			},
+		],
+	},
+	{
+		id: 3,
+		title: 'XStreams',
+		thumb: XstreamsApp,
+		description: 'This app is for tv streamings',
+		tags: [<SiReact />, <SiTailwindcss />, <SiExpress />, <SiMongodb />],
+		actions: [
+			{
+				label: 'Launch',
+				link: 'https://xstreams.netlify.app/',
+			},
+			{
+				label: <SiGithub />,
+				link: 'https://github.com/nandirchrd/app-streams',
 			},
 		],
 	},
