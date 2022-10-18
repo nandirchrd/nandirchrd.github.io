@@ -42,16 +42,16 @@ const projects = [
 		title: 'Netflix Clone',
 		thumb: NetflixClone,
 		description:
-			'I used React and TailwindCSS, and support responsive. I fetched the API used Axios just simple as that.',
+			'I used React and Bootstrap and support responsive. I fetched the API used Axios.',
 		tags: [<SiReact />, <SiTailwindcss />, 'Axios'],
 		actions: [
 			{
 				label: 'Launch',
-				link: 'https://enchanting-kitsune-388049.netlify.app/',
+				link: 'https://nandirchrd-netflix.netlify.app/',
 			},
 			{
 				label: <SiGithub />,
-				link: 'https://github.com/nandirchrd/netflix-clone-public',
+				link: 'https://github.com/nandirchrd/netflix-clone-v2',
 			},
 		],
 	},
