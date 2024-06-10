@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #22c55e;
+    --black: #000;
+    --white: #fff;
+    --blue: royalblue;
+    --purple: darkorchid;
+    --line: rgba(255, 255, 255, 0.1);
+    --muted: rgba(255, 255, 255, 0.75);
+    --netral: rgba(25, 25, 25, 0.25);
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 
+    STYLING 
+*/
+
+html,
+body {
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: var(--black);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4em;
+    background-color: inherit;
+    border: none;
+    color: var(--white);
+    border-radius: .1em;
+    padding: .2em .5em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin: .25em 0;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.active {
+    text-decoration: underline;
+    text-underline-offset: .7em;
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--line);
+    margin: auto 0;
+}
+
+.container {
+    max-width: 1080px !important;
+    margin: auto !important;
+    padding-left: 1em !important;
+    padding-right: calc(1em + 18px) !important;
+}
+
+.title-section {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1.5em;
+    font-weight: normal;
+    text-wrap: nowrap;
+}
+
+nav {
+    height: 64px;
+    padding: 1em 0;
+}
+
+.inner-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+}
+
+.logo {
+    width: 50px;
+}
+
+.inner-introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em 0;
+}
+
+.inner-introduction .description {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.inner-introduction .technology {
+    display: flex;
+    flex-direction: column;
+}
+
+.technology ul {
+    font-size: 1.8em;
+    display: flex;
+    gap: .5em;
+}
+
+.inner-introduction .social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social .contact {
+    display: flex;
+    gap: 1em 1em;
+}
+
+.social button {
+    padding: .5em 1em;
+}
+
+.whatsapp {
+    background-color: var(--primary);
+}
+
+.social ul {
+    font-size: 1.8em;
+    display: flex;
+    gap: 1em;
+}
+
+.skill {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2em;
+}
+
+.skills {
+    margin-top: 1em;
+    display: grid;
+    gap: 4em;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.icon-skill {
+    font-size: 80px;
+}
+
+.skill .level {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .2em .5em;
+    border-radius: 0.2em;
+}
+
+.skill p {
+    text-align: center;
+}
+
+.basic {
+    background-color: var(--blue);
+}
+
+.intermediate {
+    background-color: var(--purple);
+}
+
+.fluent {
+    background-color: var(--primary);
+}
+
+ul.projects {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin-top: 1.5em;
+}
+
+.project {
+    aspect-ratio: 3 / 4;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 0.2em 2em 0 0;
+    background-color: var(--netral);
+    height: 100%;
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+}
+
+.project .description {
+    padding: 0 .5em;
+}
+
+.description p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project img {
+    object-fit: fill;
+    height: 150px;
+    border-radius: .2em 2em 0 0;
+}
+
+.project .libraries {
+    display: flex;
+    gap: 1em;
+    font-size: 1.2rem;
+    margin-top: .5em;
+}
+
+.project .lib {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .action {
+    font-size: 1.5rem;
+    padding: .5em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 2em;
+    border-top: 2px solid var(--black);
+}
+
+.project .action a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .4em .5em;
+    width: 100%;
+    border: inset 10px solid var(--black);
+}
+
+.title-project {
+    font-size: 1.2rem;
+}
+
+.videos {
+    margin-top: 1em;
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+footer {
+    color: var(--muted);
+    margin-top: 2em;
+    font-size: .7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 0;
+}
+
+/* 
+    PHOTOGRAPHY 
+*/
+
+.platform-lists {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.platform a:hover {
+    color: inherit;
+}
+
+
+.samples {
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.sample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.sample:hover img {
+    transition: 500ms linear;
+    width: 108%;
+    height: 125%;
+}
+
+.sample .top {
+    font-size: 1.5em;
+    top: .5em;
+    right: .5em;
+    position: absolute;
+}
+
+.sample .bottom {
+    display: inline-block;
+    width: 90%;
+}
+
+.sample .bottom p {
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.platform,
+.sample .thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.2em;
+    overflow: hidden;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.sample img {
+    transition: 500ms linear;
+    width: 100%;
+    height: 118%;
+}
+
+/* 
+    Breakpoints
+*/
+
+@media screen and (max-width: 720px) {
+    .social {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .social ul {
+        justify-content: space-around;
+    }
+
+    ul.projects {
+        align-items: center;
+    }
+}
