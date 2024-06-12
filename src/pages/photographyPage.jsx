@@ -1,12 +1,22 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { SiGmail} from "react-icons/si";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
+// Components
 import Navbar from "../components/navbar";
+import Loading from "../components/loading";
+
+// Data arrays 
 import platforms from "../constants/platforms";
-import photos from "../constants/photos";
+import arrayPhotos from "../constants/photos";
+
+// Utils
+import handleLoadMore from '../utils/handleLoadMore';
 
 const PhotographyPage = () => {
+    let [photos, setPhotos] = useState({arr: arrayPhotos, show: 5, steps: 3, isLoading: false});
+
     return (
         <>
             <Navbar photography={true}/>
@@ -56,7 +66,7 @@ const PhotographyPage = () => {
                     </div>
                     <ul className="samples">
                         {
-                            photos.map(photo=>(
+                            photos.arr.slice(0, photos.show).map(photo=>(
                                 <li key={photo.src} className="sample">
                                     <span className="top">{photo.icon}</span>
                                     <div className="thumbnail">
@@ -69,6 +79,7 @@ const PhotographyPage = () => {
                             ))
                         }
                     </ul>
+                    {photos.isLoading ? <Loading/> : photos.show < photos.arr.length && <button className='load-more' onClick={()=>handleLoadMore(setPhotos)}>Load More</button>}
                 </div>
             </section>
         </>

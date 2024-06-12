@@ -1,14 +1,26 @@
 import { SiArduino, SiGmail, SiThreedotjs } from 'react-icons/si';
 import { FaReact, FaNode, FaWhatsapp } from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
+// Components
 import Navbar from "../components/navbar";
+import Loading from '../components/loading';
+
+// Data arrays
 import socials from "../constants/socials";
-import skills from "../constants/skills";
-import projects from "../constants/projects";
-import videos from '../constants/videos';
+import arraySkills from "../constants/skills";
+import arrayProjects from "../constants/projects";
+import arrayVideos from '../constants/videos';
+
+// Utils
+import handleLoadMore from '../utils/handleLoadMore';
 
 const DeveloperPage = () => {
+    let [skills, setSkills] = useState({arr: arraySkills, show: 5, steps: 3, isLoading: false});
+    let [projects, setProjects] = useState({arr: arrayProjects, show: 5, steps: 3, isLoading: false});
+    let [videos, setVideos] = useState({arr: arrayVideos, show: 5, steps: 3, isLoading: false})
+
     return (
         <>
             <Navbar dev={true}/>
@@ -63,7 +75,7 @@ const DeveloperPage = () => {
                         <p>Hi, My name is Nandi. I love developing applications especially on the web. I was learning programming when I started to enter high school. The first programming language I learn was C++. And then in the second grade, I started to learn Javascript. After I graduated, I continued to learn it more deeply on the internet. I learned React and started to fall in love with it. My vision is want to be mastered at Javascript. I will learn more deeply about Front-End and then Back-End. My purpose is I want to be a Fullstack Developer.</p>
                         <p className="highlight">Here are some skills I learned:</p>
                         <ul className="skills">
-                            {skills.map((skill=>(
+                            {skills.arr.slice(0, skills.show).map((skill=>(
                                 <li key={skill.name}>
                                     <div className='skill'>
                                         <span className={`level ${skill.level.toLowerCase()}`}>{skill.level}</span>
@@ -75,6 +87,7 @@ const DeveloperPage = () => {
                                 </li>
                             )))}
                         </ul>
+                        {skills.isLoading ? <Loading/> : skills.show < skills.arr.length && <button className='load-more' onClick={()=>handleLoadMore(setSkills)}>Load More</button>}
                     </div>
                 </div>
             </section>
@@ -86,7 +99,7 @@ const DeveloperPage = () => {
                     </div>
                     <ul className="projects">
                         {
-                            projects.map(project=>(
+                            projects.arr.slice(0, projects.show).map(project=>(
                                 <li key={project.name} className="project">
                                     <img src={project.thumbnail} alt={project.name} />
                                     <div className="description">
@@ -109,6 +122,7 @@ const DeveloperPage = () => {
                             ))
                         }
                     </ul>
+                    {projects.isLoading ? <Loading/> : projects.show < projects.arr.length && <button className='load-more' onClick={()=>handleLoadMore(setProjects)}>Load More</button>}
                 </div>
             </section>
             <section className="live-coding">
@@ -118,11 +132,12 @@ const DeveloperPage = () => {
                         <div className="line"></div>
                     </div>
                     <ul className="videos">
-                        {videos.map(video=>(
+                        {videos.arr.slice(0, videos.show).map(video=>(
                             <li key={video.url} className="video">
                                 <iframe allowFullScreen src={video.url} title={video.name}></iframe>
                             </li>
                         ))}
+                        {videos.isLoading ? <Loading/> : videos.show < videos.arr.length && <button className='load-more' onClick={()=>handleLoadMore(setVideos)}>Load More</button>}
                     </ul>
                 </div>
             </section>

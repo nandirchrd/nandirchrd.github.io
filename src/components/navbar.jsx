@@ -5,7 +5,7 @@ const Navbar = ({dev=false, photography=false})=>{
         <nav>
             <div className="container inner-nav">
                 <div className="logo-container">
-                    <img className="logo" src="./images/logo.png" alt="logo" />
+                    <img className="logo" src="./assets/images/logo.png" alt="logo" />
                 </div>
                 <ul className="navigation">
                     <li>
