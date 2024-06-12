@@ -17,11 +17,11 @@ const PhotographyPage = () => {
                             <p className="highlight">Hi, Nandi here.</p>
                             <h2>I'm Photographer.</h2>
                             <h3>Based in Indonesia.</h3>
-                            <p style={{maxWidth: 800}}>My love for photography drives me to capture the essence of the world through my lens, and I dedicate myself to continually improving my craft.</p>
+                            <p style={{maxWidth: 800}}>My passion for photography compels me to capture the essence of the world through my lens, and I am dedicated to continually refining and perfecting my craft.</p>
                         </div>
                         <div className="social">
                             <div className="contact">
-                                <Link target="_blank" to='https://api.whatsapp.com/send?phone=62895359763865&text=Hallo!'>
+                                <Link target="_blank" to='https://api.whatsapp.com/send?phone=62895359763865&text=Halo%20Nandi,%20saya%20menelusuri%20portofolio%20Anda.%20Bisakah%20kita%20berbicara%20lebih%20lanjut?'>
                                     <button className="whatsapp"><FaWhatsapp/>Whatsapp</button>
                                 </Link>
                                 <Link to='mailto:nandirchrd@gmail.com'>
