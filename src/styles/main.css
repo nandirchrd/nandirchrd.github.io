@@ -251,6 +251,20 @@ section {
     text-wrap: nowrap;
 }
 
+.load-more {
+    margin: auto;
+    margin-top: var(--padding);
+    background-color: var(--primary);
+}
+
+.loading {
+    display: block;
+    width: 39px;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+    margin-top: var(--padding);
+}
+
 .highlight {
     color: var(--primary);
 }
@@ -653,7 +667,7 @@ footer {
     }
 
     .platform {
-        font-size: 62px;
+        font-size: 65px;
     }
 
     .samples {

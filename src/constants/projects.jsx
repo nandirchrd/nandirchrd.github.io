@@ -14,7 +14,7 @@ const projects = [
             },
         ],
         libraries: [<TbFileTypeXml/>, [<FaCss3/>], <FaBlogger/>, <SiJavascript/>],
-        thumbnail: "./images/v-chords.png"
+        thumbnail: "./assets/images/v-chords.png"
     },
     {   
         name: "WhatsApp Clone",
@@ -26,7 +26,7 @@ const projects = [
             },
         ],
         libraries: [<FaReact/>, <SiTailwindcss/>, <SiAxios/>],
-        thumbnail: "./images/whatsapp-clone.png"
+        thumbnail: "./assets/images/whatsapp-clone.png"
     },
     // {   
     //     name: "Netflix Clone",
@@ -54,7 +54,7 @@ const projects = [
             },
         ],
         libraries: [<FaReact/>, <SiRedux/>],
-        thumbnail: "./images/react-redux-shooping.png"
+        thumbnail: "./assets/images/react-redux-shooping.png"
     },
     {   
         name: "Three JS Ball Bounce",
@@ -66,7 +66,7 @@ const projects = [
             },
         ],
         libraries: [<SiThreedotjs/>],
-        thumbnail: "./gifs/ball.gif"
+        thumbnail: "./assets/gifs/ball.gif"
     },
     {   
         name: "Controlling Arduino's Led using Socket.io (IoT)",
@@ -98,7 +98,7 @@ const projects = [
             },
         ],
         libraries: [<FaReact/>, <SiTailwindcss/>, <SiTypescript/>, <SiAxios/>],
-        thumbnail: "./images/quran-app.png"
+        thumbnail: "./assets/images/quran-app.png"
     },
     
 ]
