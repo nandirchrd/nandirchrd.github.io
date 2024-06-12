@@ -39,9 +39,12 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
     <footer>
-      <span>&copy; 2024 Nandi Richard</span>
+      <span class="copyright"></span>
     </footer>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.querySelector('.copyright').innerHTML = `© ${new Date().getFullYear()} Nandi Richard`;
+    </script>
   </body>
 </html>
