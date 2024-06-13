@@ -2,6 +2,7 @@ import { SiArduino, SiGmail, SiThreedotjs } from 'react-icons/si';
 import { FaReact, FaNode, FaWhatsapp } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 // Components
 import Navbar from "../components/navbar";
@@ -27,117 +28,146 @@ const DeveloperPage = () => {
             <section className="introduction">
                 <div className="container inner-introduction">
                     <div className="description">
-                        <p className="highlight">Hi, Nandi here.</p>
-                        <h2>I'm Front-End Developer.</h2>
-                        <h3>Based in Indonesia.</h3>
-                        <p style={{maxWidth: 800}}>I'm a front developer working with React JS. I'm passionate about the world of technology and I dedicate my life to it.</p>
+                        <p className='highlight'>
+                            <Fade triggerOnce delay={100} damping={0.08} cascade>Hi, Nandi here.</Fade>
+                        </p>
+                        <Fade triggerOnce delay={2000}>
+                            <h2>
+                            I'm Front-End Developer.
+                            </h2>
+                        </Fade>
+                        <Fade triggerOnce delay={3000}>
+                            <h3>
+                            Based in Indonesia.
+                            </h3>
+                        </Fade>
+                        <Fade triggerOnce delay={4000}>
+                            <p style={{maxWidth: 800}}>I am a Front-End Developer specializing in React JS. With a deep passion for technology, I am dedicated to advancing in this field.</p>
+                        </Fade>
                     </div>
-                    <div className="technology">
-                        <p className="highlight">The latest technology I use:</p>
-                        <ul>
-                            <li><FaReact/></li>
-                            <li><FaNode/></li>
-                            <li><SiThreedotjs/></li>
-                            <li><SiArduino/></li>
-                        </ul>
-                    </div>
-                    <div className="social">
-                        <div className="contact">
-                            <Link target="_blank" to='https://api.whatsapp.com/send?phone=62895359763865&text=Halo%20Nandi,%20saya%20menelusuri%20portofolio%20Anda.%20Bisakah%20kita%20berbicara%20lebih%20lanjut?'>
-                                <button className="whatsapp"><FaWhatsapp/>Whatsapp</button>
-                            </Link>
-                            <Link to='mailto:nandirchrd@gmail.com'>
-                                <button><SiGmail/>Gmail</button>
-                            </Link>
+                    <Fade triggerOnce delay={5000}>
+                        <div className="technology">
+                            <p className="highlight">The latest technology I use:</p>
+                            <ul>
+                                <li><FaReact/></li>
+                                <li><FaNode/></li>
+                                <li><SiThreedotjs/></li>
+                                <li><SiArduino/></li>
+                            </ul>
                         </div>
-                        
-                        <ul>
-                            {
-                                socials.map((social)=>
-                                    <li key={social.name}>
-                                        <Link target="_blank" to={social.url}>
-                                            {social.icon}
-                                        </Link>
-                                    </li>
-                                )
-                            }
-                        </ul>
-                    </div>
+                    </Fade>
+                    <Fade triggerOnce delay={8000}>
+                        <div className="social">
+                            <div className="contact">
+                                <Link target="_blank" to='https://api.whatsapp.com/send?phone=62895359763865&text=Halo%20Nandi,%20saya%20menelusuri%20portofolio%20Anda.%20Bisakah%20kita%20berbicara%20lebih%20lanjut?'>
+                                    <button className="whatsapp"><FaWhatsapp/>Whatsapp</button>
+                                </Link>
+                                <Link to='mailto:nandirchrd@gmail.com'>
+                                    <button><SiGmail/>Gmail</button>
+                                </Link>
+                            </div>
+                            <ul>
+                                {
+                                    socials.map((social)=>
+                                        <li key={social.name}>
+                                            <Link target="_blank" to={social.url}>
+                                                {social.icon}
+                                            </Link>
+                                        </li>
+                                    )
+                                }
+                            </ul>
+                        </div>
+                    </Fade>
                 </div>
             </section>
             <section className="about">
                 <div className="container">
-                    <div className="title-section">
-                        <h3>About Me</h3>
-                        <div className="line"></div>
-                    </div>
+                    <Fade triggerOnce duration={1000} delay={200}>
+                        <div className="title-section">
+                            <h3>About Me</h3>
+                            <div className="line"></div>
+                        </div>
+                    </Fade>
                     <div>
-                        <p>Hi, My name is Nandi. I love developing applications especially on the web. I was learning programming when I started to enter high school. The first programming language I learn was C++. And then in the second grade, I started to learn Javascript. After I graduated, I continued to learn it more deeply on the internet. I learned React and started to fall in love with it. My vision is want to be mastered at Javascript. I will learn more deeply about Front-End and then Back-End. My purpose is I want to be a Fullstack Developer.</p>
-                        <p className="highlight">Here are some skills I learned:</p>
+                        <Fade triggerOnce duration={1000} delay={200}>
+                            <p>Hi, my name is Nandi. I have a passion for developing web applications. I began learning programming in high school, starting with C++ and moving on to JavaScript in my second year. After graduating, I deepened my JavaScript knowledge online and discovered a love for React. My vision is to master JavaScript, focusing on both Front-End and Back-End development. My goal is to become a Fullstack Developer.</p>
+                            <p className="highlight">Here are some skills I learned:</p>
+                        </Fade>
                         <ul className="skills">
                             {skills.arr.slice(0, skills.show).map((skill=>(
-                                <li key={skill.name}>
-                                    <div className='skill'>
-                                        <span className={`level ${skill.level.toLowerCase()}`}>{skill.level}</span>
-                                        <span className="icon-skill">
-                                            {skill.icon}
-                                        </span>
-                                        <p>{skill.name}</p>
-                                    </div>
-                                </li>
+                                <Fade triggerOnce duration={1000} delay={200}>
+                                    <li key={skill.name}>
+                                        <div className='skill'>
+                                            <span className={`level ${skill.level.toLowerCase()}`}>{skill.level}</span>
+                                            <span className="icon-skill">
+                                                {skill.icon}
+                                            </span>
+                                            <p>{skill.name}</p>
+                                        </div>
+                                    </li>
+                                </Fade>
                             )))}
                         </ul>
-                        {skills.isLoading ? <Loading/> : skills.show < skills.arr.length && <button className='load-more' onClick={()=>handleLoadMore(setSkills)}>Load More</button>}
+                        <Fade triggerOnce duration={1000} delay={200}>{skills.isLoading ? <Loading/> : skills.show < skills.arr.length ? <button className='load-more' onClick={()=>handleLoadMore(setSkills)}>Load More</button> : ""}</Fade>
                     </div>
                 </div>
             </section>
             <section className="projects">
                 <div className="container inner-projects">
-                    <div className="title-section">
-                        <h3>Projects</h3>
-                        <div className="line"></div>
-                    </div>
+                    <Fade triggerOnce duration={1000} delay={200}>
+                        <div className="title-section">
+                            <h3>Projects</h3>
+                            <div className="line"></div>
+                        </div>
+                    </Fade>
                     <ul className="projects">
                         {
                             projects.arr.slice(0, projects.show).map(project=>(
-                                <li key={project.name} className="project">
-                                    <img src={project.thumbnail} alt={project.name} />
-                                    <div className="description">
-                                        <h4 className="title-project">{project.name}</h4>
-                                        <p>{project.description}</p>
-                                        <ul className="libraries">
-                                            {
-                                                project.libraries.map((lib,index)=>(
-                                                    <li key={index} className="lib">{lib}</li>
-                                                ))
-                                            }
-                                        </ul>
-                                    </div>
-                                    <div className="action">
-                                        {project.actions.map(action=>(
-                                            <Link key={action.url} to={action.url} target="_blank">{action.icon}</Link>
-                                        ))}
-                                    </div>
-                                </li>
+                                <Fade triggerOnce duration={1000} delay={200}>
+                                    <li key={project.name} className="project">
+                                        <img src={project.thumbnail} alt={project.name} />
+                                        <div className="description">
+                                            <h4 className="title-project">{project.name}</h4>
+                                            <p>{project.description}</p>
+                                            <ul className="libraries">
+                                                {
+                                                    project.libraries.map((lib,index)=>(
+                                                        <li key={index} className="lib">{lib}</li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        </div>
+                                        <div className="action">
+                                            {project.actions.map(action=>(
+                                                <Link key={action.url} to={action.url} target="_blank">{action.icon}</Link>
+                                            ))}
+                                        </div>
+                                    </li>
+                                </Fade>
                             ))
                         }
                     </ul>
-                    {projects.isLoading ? <Loading/> : projects.show < projects.arr.length && <button className='load-more' onClick={()=>handleLoadMore(setProjects)}>Load More</button>}
+                    <Fade triggerOnce duration={1000} delay={200}>{projects.isLoading ? <Loading/> : projects.show < projects.arr.length ? <button className='load-more' onClick={()=>handleLoadMore(setProjects)}>Load More</button> : ""}</Fade>
                 </div>
             </section>
             <section className="live-coding">
                 <div className="container inner-live-coding">
-                    <div className="title-section">
-                        <h3>Live Coding</h3>
-                        <div className="line"></div>
-                    </div>
+                    <Fade triggerOnce duration={1000} delay={200}>
+                        <div className="title-section">
+                            <h3>Live Coding</h3>
+                            <div className="line"></div>
+                        </div>
+                    </Fade>
                     <ul className="videos">
                         {videos.arr.slice(0, videos.show).map(video=>(
-                            <li key={video.url} className="video">
-                                <iframe allowFullScreen src={video.url} title={video.name}></iframe>
-                            </li>
+                            <Fade triggerOnce duration={1000} delay={200}>
+                                <li key={video.url} className="video">
+                                    <iframe allowFullScreen src={video.url} title={video.name}></iframe>
+                                </li>
+                            </Fade>
                         ))}
-                        {videos.isLoading ? <Loading/> : videos.show < videos.arr.length && <button className='load-more' onClick={()=>handleLoadMore(setVideos)}>Load More</button>}
+                        <Fade triggerOnce duration={1000} delay={200}>{videos.isLoading ? <Loading/> : videos.show < videos.arr.length ? <button className='load-more' onClick={()=>handleLoadMore(setVideos)}>Load More</button> : ""}</Fade>
                     </ul>
                 </div>
             </section>
