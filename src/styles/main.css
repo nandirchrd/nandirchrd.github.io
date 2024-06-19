@@ -166,6 +166,16 @@ body {
     overflow-x: hidden;
 }
 
+html::-webkit-scrollbar {
+    background-color: black;
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: .2em;
+}
+
 h1,
 h2,
 h3,
@@ -302,7 +312,8 @@ nav {
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
+    aspect-ratio: 1 / 1;
 }
 
 /* Introduction */
@@ -655,7 +666,7 @@ footer {
     }
 
     .logo {
-        width: 40px;
+        width: 50px;
     }
 
     .skills {
