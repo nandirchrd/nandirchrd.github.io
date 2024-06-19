@@ -56,7 +56,7 @@ const DeveloperPage = () => {
                             </ul>
                         </div>
                     </Fade>
-                    <Fade triggerOnce delay={8000}>
+                    <Fade triggerOnce delay={6000}>
                         <div className="social">
                             <div className="contact">
                                 <Link target="_blank" to='https://api.whatsapp.com/send?phone=62895359763865&text=Halo%20Nandi,%20saya%20menelusuri%20portofolio%20Anda.%20Bisakah%20kita%20berbicara%20lebih%20lanjut?'>
