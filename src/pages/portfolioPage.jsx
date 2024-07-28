@@ -3,7 +3,7 @@ import Loading from "../components/loading";
 import { FaWhatsapp } from "react-icons/fa";
 import { SiGmail, SiLinkedin } from "react-icons/si";
 
-const PortofolioPage = () => {
+const PortfolioPage = () => {
     let [isNotebookLoading, setIsNotebookLoading] = useState(false);
     let [isHelperLoading, setIsHelperLoading] = useState(false);
     let [isKremesLoading, setIsKremesLoading] = useState(false);
@@ -158,4 +158,4 @@ const PortofolioPage = () => {
     )
 }
 
-export default PortofolioPage;
+export default PortfolioPage;
