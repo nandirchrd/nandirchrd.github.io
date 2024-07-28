@@ -1,25 +1,25 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 
 import DeveloperPage from './pages/developerPage'
 import PhotographyPage from './pages/photographyPage'
-import PortofolioPage from './pages/portofolioPage'
+import PortfolioPage from './pages/portfolioPage'
 import './styles/main.css'
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <DeveloperPage/>,
-    errorElement: <DeveloperPage/>
-  },
   {
     path: '/photography',
     element: <PhotographyPage/>
   },
   {
-    path: '/portofolio',
-    element: <PortofolioPage/>
+    path: '/portfolio',
+    element: <PortfolioPage/>
+  },
+  {
+    path: '/',
+    element: <DeveloperPage/>,
+    errorElement: <DeveloperPage/>
   },
 ])
 
