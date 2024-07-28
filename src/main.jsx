@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 import DeveloperPage from './pages/developerPage'
 import PhotographyPage from './pages/photographyPage'
 import PortfolioPage from './pages/portfolioPage'
 import './styles/main.css'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/photography',
     element: <PhotographyPage/>
