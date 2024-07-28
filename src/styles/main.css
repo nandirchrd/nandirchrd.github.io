@@ -159,11 +159,24 @@ table {
 html,
 body {
     width: 100vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     background-color: var(--black);
     color: var(--white);
     overflow-x: hidden;
+}
+
+p {
+    font-family: "Open Sans";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat";
 }
 
 html::-webkit-scrollbar {
@@ -185,22 +198,52 @@ h6 {
     font-weight: bold;
 }
 
+/* Heading 1 */
 h1 {
-    font-size: 2.5rem;
+    font-size: 2em;
+    /* Ukuran font */
+    line-height: 1.2;
+    /* Tinggi baris */
 }
 
+/* Heading 2 */
 h2 {
-    font-size: 2.4rem;
+    font-size: 1.75em;
+    /* Ukuran font */
+    line-height: 1.3;
+    /* Tinggi baris */
 }
 
+/* Heading 3 */
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.5em;
+    /* Ukuran font */
+    line-height: 1.4;
+    /* Tinggi baris */
 }
 
-h4,
-h5,
+/* Heading 4 */
+h4 {
+    font-size: 1.25em;
+    /* Berat font */
+    line-height: 1.4;
+    /* Tinggi baris */
+}
+
+/* Heading 5 */
+h5 {
+    font-size: 1em;
+    /* Berat font */
+    line-height: 1.5;
+    /* Tinggi baris */
+}
+
+/* Heading 6 */
 h6 {
-    font-size: 1rem;
+    font-size: 0.875em;
+    /* Berat font */
+    line-height: 1.5;
+    /* Tinggi baris */
 }
 
 button {
@@ -247,6 +290,10 @@ img,
 a {
     -webkit-user-drag: none;
     user-select: none;
+}
+
+.hidden {
+    display: none !important;
 }
 
 section {
@@ -604,9 +651,146 @@ ul.projects {
     height: 118%;
 }
 
+
+/* 
+    PORTOFOLIO PAGE
+*/
+.portofolio-page a {
+    text-decoration: underline;
+    text-underline-offset: .25em;
+}
+
+.portofolio-page p {
+    max-width: 750px;
+}
+
+.portofolio-page .circle {
+    margin-left: 1.2em;
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.circle li div {
+    margin-top: .2em;
+    padding: .2em 0;
+}
+
+.portofolio-page .show {
+    background-color: var(--primary);
+    padding: 0em .5em;
+    display: inline-block;
+    margin: .2em 0;
+}
+
+.portofolio-page .line {
+    margin: 1em 0;
+    border-color: var(--netral);
+}
+
+.portofolio-page .container {
+    max-width: 900px !important;
+}
+
+.portofolio-page .date {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.portofolio-page h1,
+.portofolio-page h2,
+.portofolio-page h3,
+.portofolio-page h4,
+.portofolio-page h5,
+.portofolio-page h6,
+.portofolio-page p,
+.portofolio-page li {
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1.3;
+}
+
+section.about-portofolio,
+section.experiences-portofolio,
+section.education-portofolio,
+section.skills-portofolio {
+    padding: 0;
+    margin: 0;
+}
+
+section.about-portofolio .container,
+section.experiences-portofolio .container,
+section.education-portofolio .container,
+section.skills-portofolio .container {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+section.about-portofolio {
+    padding-top: 1.5em;
+}
+
+section.about-portofolio .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.about-portofolio .top ul {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+section.about-portofolio .top li {
+    text-align: end;
+    display: flex;
+    gap: .5em;
+    justify-content: end;
+    align-items: center;
+}
+
+section.experiences-portofolio {
+    padding-top: 0;
+}
+
+section.experiences-portofolio iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: .2em;
+}
+
+section.experiences-portofolio .pictures {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: .5em;
+}
+
+section.experiences-portofolio .pictures img {
+    aspect-ratio: 1 / 1;
+    border-radius: .2em;
+}
+
+section.education-portofolio {
+    padding-top: 0;
+}
+
+section.skills-portofolio {
+    padding-bottom: 1.5em;
+}
+
+.me {
+    aspect-ratio: 1 / 1;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
 /* Footer */
 
 footer {
+    width: 100%;
     border-top: 2px solid var(--netral);
     color: var(--muted);
     font-size: .66em;
@@ -623,6 +807,10 @@ footer {
     .social {
         flex-direction: column;
         gap: 3em;
+    }
+
+    .portofolio-page .top .contact-portofolio {
+        display: none;
     }
 
     .platform {
