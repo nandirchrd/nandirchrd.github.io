@@ -43,7 +43,7 @@ const PortfolioPage = () => {
             </div>
             <div className="description">
                 <h3>NANDI SETIADI</h3>
-                <p>Nama saya Nandi Setiadi. Saya berusia 22 tahun. Saya bersemangat untuk memulai karier dan terus belajar dalam dunia kerja. Meskipun Saya belum mempunyai banyak pengalaman, Saya memiliki motivasi yang tinggi untuk terus tumbuh dan berkembang serta berkontribusi terhadap perusahaan Anda.</p>
+                <p>Nama saya Nandi Setiadi, berusia 22 tahun. Saya bersemangat untuk memulai karier serta terus belajar dalam dunia kerja. Meskipun pengalaman saya terbatas, tetapi saya memiliki motivasi tinggi untuk tumbuh, berkembang, dan berkontribusi secara signifikan bagi perusahaan Anda.</p>
             </div>
             <hr className="line"/>
         </div>
@@ -55,7 +55,7 @@ const PortfolioPage = () => {
                 <li>
                     <h5>Magang sebagai ShopKeeper di Right Notebook</h5>
                     <p className="date">2019 Januari - 2019 April</p>
-                    <p>Bertanggung jawab untuk memberi pelayanan ke pelanggan. Menjaga kebersihan dan keamananan toko. Dan belajar memperbaiki laptop yang bermasalah.</p>
+                    <p>Bertanggung jawab memberi pelayanan ke pelanggan, menjaga kebersihan dan kerapian toko, dan belajar memperbaiki laptop yang bermasalah.</p>
                     <button className="show" data-target='right-notebook' onClick={(e)=>handleShow(e, setIsNotebookLoading)}>Show</button>
                     { isNotebookLoading && <Loading style={{margin: '1em auto'}}/> }
                     <div id="right-notebook" className='hidden'>
@@ -69,7 +69,7 @@ const PortfolioPage = () => {
                 <li>
                     <h5>Bekerja sebagai Helper di PT Sukses Ganda Promosindo</h5>
                     <p className="date">2022 Mei - 2022 September</p>
-                    <p>Bertanggung jawab untuk mempromosikan produk. Mendokumentasikan laporan aktivitas penjualan. Dan membantu sales dalam penjualan produk.</p>
+                    <p>Bertanggung jawab untuk membantu sales mempromosikan produk, mendokumentasikan aktivitas penjualan untuk laporan, memberikan sampel produk ke konsumen.</p>
                     <button className="show" data-target='helper' onClick={(e)=>handleShow(e, setIsHelperLoading)}>Show</button>
                     { isHelperLoading && <Loading style={{margin: '1em auto'}} /> }
                     <div id="helper" className='hidden'>
@@ -85,7 +85,7 @@ const PortfolioPage = () => {
                 <li>
                     <h5>Bekerja sebagai Pengolah Makanan di Keremes Singkong</h5>
                     <p className="date">2022 Desember</p>
-                    <p>Bertanggung jawab untuk mengolah, dan mencetak singkong.</p>
+                    <p>Bertanggung jawab mengolah dan mencetak singkong, memastikan proses produksi yang efisien dan menghasilkan produk yang siap diproduksi.</p>
                     <button className="show" data-target='kremes' onClick={(e)=>handleShow(e, setIsKremesLoading)}>Show</button>
                     { isKremesLoading && <Loading style={{margin: '1em auto'}} /> }
                     <div id="kremes" className='hidden'>
@@ -147,10 +147,10 @@ const PortfolioPage = () => {
         <div className="container">
             <h3>Keterampilan</h3>
             <ul className="circle">
-                <li>Microsoft Office</li>
-                <li>Adobe Photoshop</li>
-                <li>Programming</li>
-                <li>Memanajemen Waktu Dengan Baik</li>
+                <li>Memiliki keterampilan menggunakan Microsoft Office.</li>
+                <li>Memiliki keterampilan menggunakan Adobe Photoshop.</li>
+                <li>Memiliki keterampilan dalam dunia Pemrograman.</li>
+                <li>Kemampuan dalam memanajemen waktu dengan baik.</li>
             </ul>
         </div>
     </section>
