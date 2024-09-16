@@ -2,7 +2,7 @@
   "name": "nandirchrd",
   "private": true,
   "homepage": "https://nandirchrd.github.io",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
