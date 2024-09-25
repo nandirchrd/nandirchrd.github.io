@@ -82,7 +82,7 @@ const projects = [
             },
         ],
         libraries: [<FaRobot/>, <SiArduino/>, <SiSocketdotio/>],
-        thumbnail: "https://camo.githubusercontent.com/3e6730a07877970e716b1c1ce0c19167a51d04af7abffca1fe9b1ec01443ab7d/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f5a6d685736425a365249342f6d7164656661756c742e6a7067"
+        thumbnail: "https://img.youtube.com/vi/ZmhW6BZ6RI4/mqdefault.jpg"
     },
     {   
         name: "Quran App",
