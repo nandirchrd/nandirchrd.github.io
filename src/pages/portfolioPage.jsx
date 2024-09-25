@@ -43,7 +43,7 @@ const PortfolioPage = () => {
             </div>
             <div className="description">
                 <h3>NANDI SETIADI</h3>
-                <p>Nama saya Nandi Setiadi, berusia 22 tahun. Saya bersemangat untuk memulai karier serta terus belajar dalam dunia kerja. Meskipun pengalaman saya terbatas, tetapi saya memiliki motivasi tinggi untuk tumbuh, berkembang, dan berkontribusi secara signifikan bagi perusahaan Anda.</p>
+                <p>Nama saya Nandi Setiadi, berusia 23 tahun. Saya bersemangat untuk terus belajar dalam dunia kerja. Meskipun pengalaman saya terbatas, tetapi saya memiliki motivasi tinggi untuk tumbuh, berkembang, dan berkontribusi secara signifikan bagi perusahaan Anda.</p>
             </div>
             <hr className="line"/>
         </div>
@@ -84,7 +84,7 @@ const PortfolioPage = () => {
                 </li>
                 <li>
                     <h5>Bekerja sebagai Pengolah Makanan di Keremes Singkong</h5>
-                    <p className="date">2022 Desember</p>
+                    <p className="date">2024 Mei - 2024 Juni</p>
                     <p>Bertanggung jawab mengolah dan mencetak singkong, memastikan proses produksi yang efisien dan menghasilkan produk yang siap diproduksi.</p>
                     <button className="show" data-target='kremes' onClick={(e)=>handleShow(e, setIsKremesLoading)}>Show</button>
                     { isKremesLoading && <Loading style={{margin: '1em auto'}} /> }
@@ -102,7 +102,7 @@ const PortfolioPage = () => {
                 </li>
                 <li>
                     <h5>Unemployed</h5>
-                    <p className="date">2023 January - Sekarang</p>
+                    <p className="date">Sekarang</p>
                     <p>Fokus untuk mempelajari pemrograman dan selalu berusaha untuk menggunakan waktu dengan produktif.</p>
                     <button className="show" data-target='unemployed' onClick={(e)=>handleShow(e, setIsUnemployedLoading)}>Show</button>
                     { IsUnemployedLoading && <Loading style={{margin: '1em auto'}} /> }
@@ -112,9 +112,9 @@ const PortfolioPage = () => {
                             <li><img src="/assets/images/portofolio/js.png" alt="Sertifikat dicoding" /></li>
                         </ul>
                         <ul>
-                           <li>Youtube: <a href="https://youtube.com/@silentdev224" target="_blank">Coding</a></li>
-                           <li>Microstock: <a href="https://shutterstock.com/g/nandi+richard" target="_blank">ShutterStock</a>, <a href="https://www.eyeem.com/u/nandirichard/photos" target="_blank">EyeEm</a></li>
-                           <li>Website: <a href="https://v-chords.blogspot.com" target="_blank">V-Chords</a>, <a href="https://nandirchrd.github.io" target="_blank">Developer Portofolio</a></li>
+                           <li>Youtube: <a href="https://youtube.com/@silentdev224" target="_blank">Coding</a>, <a href="https://youtube.com/@nandirichard" target="_blank">Guitar</a></li>
+                           <li>Microstock: <a href="https://shutterstock.com/g/nandi+richard" target="_blank">ShutterStock</a></li>
+                           <li>Website: <a href="https://v-chords.blogspot.com" target="_blank">V-Chords</a>, <a href="https://moonely.blogspot.com" target="_blank">Journal</a>, <a href="https://nandirchrd.github.io" target="_blank">Developer Portofolio</a></li>
                         </ul>
                     </div>
                 </li>
