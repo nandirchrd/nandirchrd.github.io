@@ -114,7 +114,7 @@ const PortfolioPage = () => {
                         <ul>
                            <li>Youtube: <a href="https://youtube.com/@silentdev224" target="_blank">Coding</a>, <a href="https://youtube.com/@nandirichard" target="_blank">Guitar</a></li>
                            <li>Microstock: <a href="https://shutterstock.com/g/nandi+richard" target="_blank">ShutterStock</a></li>
-                           <li>Website: <a href="https://v-chords.blogspot.com" target="_blank">V-Chords</a>, <a href="https://nandirchrd.github.io" target="_blank">Developer Portofolio</a></li>
+                           <li>Website: <a href="https://v-chords.blogspot.com" target="_blank">V-Chords</a>, <a href="https://nandirchrd.github.io" target="_blank">Developer Portofolio</a>, <a href="https://quran-app-bayrack.netlify.app/" target="_blank">Quran App</a></li>
                         </ul>
                     </div>
                 </li>
