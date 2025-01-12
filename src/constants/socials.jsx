@@ -13,7 +13,7 @@ const socials = [
     },
     {   
         name: "LinkedIn",
-        url: "https://linkedin.com/in/nandi-setiadi-157b31228",
+        url: "https://id.linkedin.com/in/nandi-richard-157b31228",
         icon: <FiLinkedin/>
     },
     {   
