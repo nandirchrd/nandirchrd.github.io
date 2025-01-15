@@ -87,15 +87,17 @@ const PhotographyPage = () => {
                         {
                             photos.arr.slice(0, photos.show).map(photo=>(
                                 <Fade triggerOnce duration={1000} delay={200}>
-                                    <li key={photo.src} className="sample">
-                                        <span className="top">{photo.icon}</span>
-                                        <div className="thumbnail">
-                                            <img src={photo.src} alt={photo.name} />
-                                        </div>
-                                        <span className="bottom">
-                                            <p>{photo.name}</p>
-                                        </span>
-                                    </li>
+                                    <a href={photo.link} alt={photo.name} target='_blank'>
+                                        <li key={photo.src} className="sample">
+                                            <span className="top">{photo.icon}</span>
+                                            <div className="thumbnail">
+                                                <img src={photo.src} alt={photo.name} />
+                                            </div>
+                                            <span className="bottom">
+                                                <p>{photo.name}</p>
+                                            </span>
+                                        </li>
+                                    </a>
                                 </Fade>
                             ))
                         }
