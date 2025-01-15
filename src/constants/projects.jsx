@@ -100,6 +100,18 @@ const projects = [
         libraries: [<FaReact/>, <SiTailwindcss/>, <SiTypescript/>, <SiAxios/>],
         thumbnail: "./assets/images/quran-app.png"
     },
+    {
+        name: "Moonely (My Journal)",
+        description: "This project is for me to write a personal journal, sometimes I want to write and I write it here.",
+        actions: [
+            {
+                icon: <MdRocketLaunch/>,
+                url: "https://moonely.blogspot.com"
+            },
+        ],
+        libraries: [<TbFileTypeXml/>, [<FaCss3/>], <FaBlogger/>, <SiJavascript/>],
+        thumbnail: "./assets/images/moonely.png"
+    }
     
 ]
 
