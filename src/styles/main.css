@@ -500,7 +500,7 @@ ul.projects {
 .project .description p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -866,8 +866,9 @@ footer {
     }
 
     .platform {
-        font-size: 65px;
+        font-size: 43px;
     }
+
 
     .samples {
         grid-template-columns: 1fr 1fr;
@@ -876,4 +877,5 @@ footer {
     .sample .top {
         font-size: 1.2em;
     }
+
 }
