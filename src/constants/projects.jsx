@@ -69,6 +69,18 @@ const projects = [
         thumbnail: "./assets/gifs/ball.gif"
     },
     {   
+        name: "Three JS Lights",
+        description: "Made with Three JS, experiment using three JS.",
+        actions: [
+            {
+                icon: <MdRocketLaunch/>,
+                url: "https://rchrd-lights.netlify.app/"
+            },
+        ],
+        libraries: [<SiThreedotjs/>],
+        thumbnail: "./assets/gifs/lights.gif"
+    },
+    {   
         name: "Controlling Arduino's Led using Socket.io (IoT)",
         description: "Real time application",
         actions: [
