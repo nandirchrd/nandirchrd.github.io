@@ -1,81 +1,360 @@
-import { SiAdobe, SiEyeem, SiShutterstock } from "react-icons/si";
+import { SiEyeem, SiShutterstock } from 'react-icons/si';
 
 const photos = [
-    {   
-        name: "A cockroach",
-        src: "https://cdn.eyeem.com/thumb/ac409e24d4b64472a8209a4ac74961d86cb45723-1709235617347/900/900",
-        icon: <SiEyeem/>,
-        link: "https://www.eyeem.com/p/212376420"
-        
-    },
-    {   
-        name: "A beautiful flower",
-        src: "https://cdn.eyeem.com/thumb/69937e09ea43d19bd98d849efee9e58792eee7c9-1709235895320/900/900",
-        icon: <SiEyeem/>,
-        link: "https://www.eyeem.com/p/212376451"
-    },
-    {   
-        name: "A Grasshoper on the leaf",
-        src: "https://cdn.eyeem.com/thumb/6b90eae5be20ac311e507de63798f9e1860fe001-1695838361166/w/150",
-        icon: <SiEyeem/>,
-        link: "https://www.eyeem.com/p/208899149"
-    },
-    {   
-        name: "A Catterpilar on the leaf",
-        src: "https://cdn.eyeem.com/thumb/839374a7b2d27d83965e9a0e130aee7f08817c73-1709235279644/900/900",
-        icon: <SiEyeem/>,
-        link: "https://www.eyeem.com/p/212376394"
-        
-    },
-    {   
-        name: "An small insect on the leaf",
-        src: "https://cdn.eyeem.com/thumb/b8c317c54cef21596646fe10b06e6b6bbd1a6e9d-1709235771796/900/900",
-        icon: <SiEyeem/>,
-        link: "https://www.eyeem.com/p/212376442"
-    },
-    
-    {   
-        name: "An unknown plant",
-        src: "https://cdn.eyeem.com/thumb/a3d64f947979e324f1fac8c97a8ff1ee71265140-1709235940594/w/400",
-        icon: <SiEyeem/>,
-        link: "https://www.eyeem.com/p/212376482"
-    },
-    {   
-        name: "A fresh care with background technology",
-        src: "https://www.shutterstock.com/image-photo/tasikmalaya-indonesia-june-22-2020-260nw-2431874983.jpg",
-        icon: <SiShutterstock/>,
-        link: "https://www.shutterstock.com/image-photo/tasikmalaya-indonesia-june-22-2020-2431874983"
-    },
-    {   
-        name: "Mount Sagara",
-        src: "https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-260nw-2472414069.jpg",
-        icon: <SiShutterstock/>,
-        link: "https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-16-2472414069"
-    },
-    {   
-        name: "Beautiful Sunset",
-        src: "https://www.shutterstock.com/image-photo/tasikmalaya-indonesia-march-1-2019-sunset-260nw-2432059353.jpg",
-        icon: <SiShutterstock/>,
-        link: "https://www.shutterstock.com/image-photo/tasikmalaya-indonesia-march-1-2019-sunset-2432059353"
-    },
-    {   
-        name: "A Man in Mosque",
-        src: "https://www.shutterstock.com/image-photo/tasikmalaya-indonesia-february-14-2024-old-260nw-2431840793.jpg",
-        icon: <SiShutterstock/>,
-        link: "https://www.shutterstock.com/image-photo/tasikmalaya-indonesia-february-14-2024-old-2431840793"
-    },
-    {   
-        name: "Tasikmalaya Dadaha",
-        src: "https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-august-03-260nw-2497757129.jpg",
-        icon: <SiShutterstock/>,
-        link: "https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-august-03-2497757129"
-    },
-    {   
-        name: "Tasikmalaya City Square",
-        src: "https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-august-30-260nw-2511135827.jpg",
-        icon: <SiShutterstock/>,
-        link: "https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-august-30-2511135827"
-    }
-]
+  {
+    name: 'A cockroach',
+    src: 'https://cdn.eyeem.com/thumb/ac409e24d4b64472a8209a4ac74961d86cb45723-1709235617347/900/900',
+    icon: <SiEyeem />,
+    link: 'https://www.eyeem.com/p/212376420',
+  },
+  {
+    name: 'A beautiful flower',
+    src: 'https://cdn.eyeem.com/thumb/69937e09ea43d19bd98d849efee9e58792eee7c9-1709235895320/900/900',
+    icon: <SiEyeem />,
+    link: 'https://www.eyeem.com/p/212376451',
+  },
+  {
+    name: 'A Grasshoper on the leaf',
+    src: 'https://cdn.eyeem.com/thumb/6b90eae5be20ac311e507de63798f9e1860fe001-1695838361166/w/150',
+    icon: <SiEyeem />,
+    link: 'https://www.eyeem.com/p/208899149',
+  },
+  {
+    name: 'A Catterpilar on the leaf',
+    src: 'https://cdn.eyeem.com/thumb/839374a7b2d27d83965e9a0e130aee7f08817c73-1709235279644/900/900',
+    icon: <SiEyeem />,
+    link: 'https://www.eyeem.com/p/212376394',
+  },
+  {
+    name: 'An small insect on the leaf',
+    src: 'https://cdn.eyeem.com/thumb/b8c317c54cef21596646fe10b06e6b6bbd1a6e9d-1709235771796/900/900',
+    icon: <SiEyeem />,
+    link: 'https://www.eyeem.com/p/212376442',
+  },
+  {
+    name: 'An unknown plant',
+    src: 'https://cdn.eyeem.com/thumb/a3d64f947979e324f1fac8c97a8ff1ee71265140-1709235940594/w/400',
+    icon: <SiEyeem />,
+    link: 'https://www.eyeem.com/p/212376482',
+  },
+  {
+    name: 'A Man sitting in Mosque',
+    src: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-february-14-260nw-2587330913.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-february-14-2587330913',
+  },
+  {
+    name: 'Top of Cikuray Mountain',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584117479.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584117479',
+  },
+  {
+    name: 'Top of Cikuray Mountain 2',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584117171.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584117171',
+  },
+  {
+    name: 'Top of Cikuray Mountain 3',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584116867.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584116867',
+  },
+  {
+    name: 'Top of Cikuray Mountain 4',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584116593.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584116593',
+  },
+  {
+    name: "People at Cuanki's Cikuray",
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584116157.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584116157',
+  },
+  {
+    name: "People at Cuanki's Cikuray 2",
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584115869.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584115869',
+  },
+  {
+    name: 'Pos 7 Cikuray Mountain',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584115223.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584115223',
+  },
+  {
+    name: 'Cikuray Treck',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584114681.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584114681',
+  },
+  {
+    name: 'Direction signs (Via Pamancar) on Mount Cikuray',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584114269.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584114269',
+  },
+  {
+    name: 'Direction signs (Via Pamancar) on Mount Cikuray 2',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584114051.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584114051',
+  },
+  {
+    name: 'Pos 4 Cikuray Mountain',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584113289.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584113289',
+  },
+  {
+    name: 'Cikuray Treck 2',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584111637.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584111637',
+  },
+  {
+    name: 'Cikuray Treck 3',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584111359.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584111359',
+  },
+  {
+    name: 'Cikuray Treck 4',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584110671.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584110671',
+  },
+  {
+    name: 'Pos 3 Cikuray Mountain',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584110079.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584110079',
+  },
+  {
+    name: 'Cikuray Treck 5',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584109801.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584109801',
+  },
+  {
+    name: 'Cikuray Treck 6',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584109525.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584109525',
+  },
+  {
+    name: 'Cikuray Treck 7',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584109067.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584109067',
+  },
+  {
+    name: 'Cikuray Treck 8',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584108683.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584108683',
+  },
+  {
+    name: 'Cikuray Treck 9',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584108085.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584108085',
+  },
+  {
+    name: 'Cikuray Treck 10',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584107701.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584107701',
+  },
+  {
+    name: 'Cikuray Treck 11',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584107191.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584107191',
+  },
+  {
+    name: 'Pos 2 Cikuray Mountain',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584106645.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584106645',
+  },
+  {
+    name: 'Pos 2 Cikuray Mountain',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584106457.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584106457',
+  },
+  {
+    name: 'A Man Hike Mount Cikuray',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584105783.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584105783',
+  },
+  {
+    name: 'Cikuray Treck 12',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584105127.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584105127',
+  },
+  {
+    name: 'Cikuray Treck 13',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584104967.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584104967',
+  },
+  {
+    name: 'Cikuray mountain signpost',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584104083.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584104083',
+  },
+  {
+    name: 'Cikuray mountain signpost 2',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584103903.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584103903',
+  },
+  {
+    name: 'Cikuray mountain signpost 3',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584103305.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584103305',
+  },
+  {
+    name: 'Cikuray mountain signpost 4',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584103021.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584103021',
+  },
+  {
+    name: 'Pos 1 Cikuray Mountain',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584102723.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584102723',
+  },
+  {
+    name: 'Cikuray mountain signpost 5',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-260nw-2584102537.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-august-10-2584102537',
+  },
+  {
+    name: 'Camping tent on Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584098125.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584098125',
+  },
+  {
+    name: 'A man on Top Of Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584097713.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584097713',
+  },
+  {
+    name: 'Top of Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584097387.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584097387',
+  },
+  {
+    name: 'Top of Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584096443.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584096443',
+  },
+  {
+    name: 'Pos 4 Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584095827.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584095827',
+  },
+  {
+    name: 'Pos 4 Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584094031.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584094031',
+  },
+  {
+    name: 'Pos 3 Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584093641.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584093641',
+  },
+  {
+    name: 'Pos 2 Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584093305.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584093305',
+  },
+  {
+    name: 'Sign on Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584093137.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584093137',
+  },
+  {
+    name: 'Pos 1 Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584092683.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584092683',
+  },
+  {
+    name: 'Map on Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584092147.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584092147',
+  },
+  {
+    name: 'Basecamp on Mount Sagara',
+    src: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-260nw-2584091371.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/garut-west-java-indonesia-december-17-2584091371',
+  },
+  {
+    name: 'Signs on the road',
+    src: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-january-20-260nw-2584071685.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-january-20-2584071685',
+  },
+  {
+    name: 'Tasikmalaya Dadaha',
+    src: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-january-20-260nw-2584071145.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-january-20-2584071145',
+  },
+  {
+    name: 'Medicinal kratom capsules',
+    src: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-january-16-260nw-2584070487.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-january-16-2584070487',
+  },
+  {
+    name: 'Tasikmalaya City Park',
+    src: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-january-16-260nw-2584068983.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-january-16-2584068983',
+  },
+  {
+    name: 'Pangandaran Beach',
+    src: 'https://www.shutterstock.com/image-photo/pangandaran-west-java-indonesia-december-16-260nw-2584068273.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/pangandaran-west-java-indonesia-december-16-2584068273',
+  },
+  {
+    name: 'Sunset at Nangela Kawalu',
+    src: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-november-16-260nw-2584064879.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-november-16-2584064879',
+  },
+  {
+    name: 'Stones at Nangela Kawalu',
+    src: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-november-16-260nw-2584064407.jpg',
+    icon: <SiShutterstock />,
+    link: 'https://www.shutterstock.com/image-photo/tasikmalaya-west-java-indonesia-november-16-2584064407',
+  },
+];
 
 export default photos;
