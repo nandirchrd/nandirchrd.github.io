@@ -55,10 +55,10 @@ const PortfolioPage = () => {
             <ul className="contact-portofolio">
               <li>
                 <a
-                  href="https://api.whatsapp.com/send?phone=62895359763865&text=Halo%20Nandi,%20saya%20menelusuri%20portofolio%20Anda.%20Bisakah%20kita%20berbicara%20lebih%20lanjut?'"
+                  href="https://api.whatsapp.com/send?phone=6285183807094&text=Halo%20Nandi,%20saya%20menelusuri%20portofolio%20Anda.%20Bisakah%20kita%20berbicara%20lebih%20lanjut?'"
                   target="_blank"
                 >
-                  +62 895-3597-63865
+                  +62 851-8380-7094
                 </a>{' '}
                 <FaWhatsapp />
               </li>
