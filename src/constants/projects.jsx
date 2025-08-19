@@ -131,8 +131,8 @@ const projects = [
       <SiAxios key={4} />,
     ],
     thumbnail: './assets/images/quran-app.png',
-  },
-  {
+  }
+  /* {
     name: 'Moonely (My Journal)',
     description:
       'This project is for me to write a personal journal, sometimes I want to write and I write it here.',
@@ -149,7 +149,7 @@ const projects = [
       <SiJavascript key={4} />,
     ],
     thumbnail: './assets/images/moonely.png',
-  },
+  },*/
 ];
 
 export default projects;
