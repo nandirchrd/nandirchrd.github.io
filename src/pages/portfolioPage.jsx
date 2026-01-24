@@ -6,6 +6,7 @@ import { SiGmail, SiLinkedin } from 'react-icons/si';
 const PortfolioPage = () => {
   let [isNotebookLoading, setIsNotebookLoading] = useState(false);
   let [isHelperLoading, setIsHelperLoading] = useState(false);
+  let [isBongkarMuatLoading, setisBongkarMuatLoading] = useState(false);
   let [isKremesLoading, setIsKremesLoading] = useState(false);
   let [IsUnemployedLoading, setIsUnemployedLoading] = useState(false);
   let [isMouseEnter, setIsMouseEnter] = useState(false);
@@ -193,6 +194,23 @@ const PortfolioPage = () => {
                     <img src="/assets/images/portofolio/surat-kontrak.jpg" alt="Surat kontrak" />
                   </li>
                 </ul>
+              </div>
+            </li>
+            <li>
+              <h5>Bekerja sebagai Bongkar Muat di Gudang Kemiri</h5>
+              <p className="date">2023 September - 2024 Januari</p>
+              <p>Bertanggung jawab mensortir barang, dan memindahkan barang-barang ke truk.</p>
+              <button
+                className="show"
+                data-target="bongkar-muat"
+                onClick={(e) => handleShow(e, setisBongkarMuatLoading)}
+              >
+                Show
+              </button>
+              {isBongkarMuatLoading && <Loading style={{ margin: '1em auto' }} />}
+              <div id="bongkar-muat" className="hidden">
+                <iframe src="https://youtube.com/embed/zRHPPaO1-fo"></iframe>
+                <iframe src="https://youtube.com/embed/dnqAUkDPvhk"></iframe>
               </div>
             </li>
             <li>
