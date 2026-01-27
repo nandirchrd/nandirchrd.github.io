@@ -14,7 +14,7 @@ const platforms = [
   },
   {
     name: 'Eyeem',
-    url: 'https://www.eyeem.com/u/nandirichard/photos',
+    url: 'https://petapixel.com/2025/12/11/eyeem-is-shutting-down',
     icon: <SiEyeem />,
   },
   {

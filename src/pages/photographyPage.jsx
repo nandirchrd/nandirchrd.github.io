@@ -18,8 +18,8 @@ import handleLoadMore from '../utils/handleLoadMore';
 const PhotographyPage = () => {
   let [photos, setPhotos] = useState({
     arr: arrayPhotos,
-    show: 12,
-    steps: 8,
+    show: 100,
+    steps: 100,
     isLoading: false,
   });
 
@@ -36,7 +36,7 @@ const PhotographyPage = () => {
                 </Fade>
               </p>
               <Fade triggerOnce delay={2000}>
-                <h2>I&apos;m Photographer.</h2>
+                <h2>I'm Photographer.</h2>
               </Fade>
               <Fade triggerOnce delay={3000}>
                 <h3>Based in Indonesia.</h3>
