@@ -199,7 +199,7 @@ const PortfolioPage = () => {
             <li>
               <h5>Bekerja sebagai Bongkar Muat di Gudang Kemiri</h5>
               <p className="date">2023 September - 2024 Januari</p>
-              <p>Bertanggung jawab mensortir barang, dan memindahkan barang-barang ke truk.</p>
+              <p>Bertanggung jawab memindahkan barang dari truk ke gudang atau sebaliknya.</p>
               <button
                 className="show"
                 data-target="bongkar-muat"
@@ -279,10 +279,6 @@ const PortfolioPage = () => {
                     Microstock:{' '}
                     <a href="https://shutterstock.com/g/nandi+richard" target="_blank">
                       ShutterStock
-                    </a>
-                    ,{' '}
-                    <a href="https://www.eyeem.com/u/nandirichard/photos" target="_blank">
-                      Eyeem
                     </a>
                   </li>
                   <li>
