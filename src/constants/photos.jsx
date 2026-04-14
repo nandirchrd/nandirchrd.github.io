@@ -23,19 +23,19 @@ const photos = [
     name: 'A Catterpilar on the leaf',
     src: 'https://cdn.eyeem.com/thumb/839374a7b2d27d83965e9a0e130aee7f08817c73-1709235279644/w/900',
     icon: <SiEyeem />,
-    link: 'https://cdn.eyeem.com/thumb/6b90eae5be20ac311e507de63798f9e1860fe001-1695838361166/w/1280',
+    link: 'https://cdn.eyeem.com/thumb/839374a7b2d27d83965e9a0e130aee7f08817c73-1709235279644/w/1280',
   },
   {
     name: 'An small insect on the leaf',
     src: 'https://cdn.eyeem.com/thumb/b8c317c54cef21596646fe10b06e6b6bbd1a6e9d-1709235771796/w/900',
     icon: <SiEyeem />,
-    link: 'https://cdn.eyeem.com/thumb/6b90eae5be20ac311e507de63798f9e1860fe001-1695838361166/w/1280',
+    link: 'https://cdn.eyeem.com/thumb/b8c317c54cef21596646fe10b06e6b6bbd1a6e9d-1709235771796/w/1280',
   },
   {
     name: 'An unknown plant',
     src: 'https://cdn.eyeem.com/thumb/a3d64f947979e324f1fac8c97a8ff1ee71265140-1709235940594/w/900',
     icon: <SiEyeem />,
-    link: 'https://cdn.eyeem.com/thumb/6b90eae5be20ac311e507de63798f9e1860fe001-1695838361166/w/1280',
+    link: 'https://cdn.eyeem.com/thumb/a3d64f947979e324f1fac8c97a8ff1ee71265140-1709235940594/w/1280',
   },
   {
     name: 'A Man sitting in Mosque',
