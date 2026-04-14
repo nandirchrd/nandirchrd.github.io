@@ -53,7 +53,7 @@ const PhotographyPage = () => {
                 <div className="contact">
                   <Link
                     target="_blank"
-                    to="https://api.whatsapp.com/send?phone=62895359763865&text=Halo%20Nandi,%20saya%20menelusuri%20portofolio%20Anda.%20Bisakah%20kita%20berbicara%20lebih%20lanjut?"
+                    to="https://api.whatsapp.com/send?phone=6285183807094&text=Halo%20Nandi,%20saya%20menelusuri%20portofolio%20Anda.%20Bisakah%20kita%20berbicara%20lebih%20lanjut?"
                   >
                     <button className="whatsapp">
                       <FaWhatsapp />
